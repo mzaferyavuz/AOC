@@ -1,6 +1,7 @@
 <svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="black"/>
   <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" 
-        fill="white" font-family="Arial Black, sans-serif" font-weight="900" font-size="130" letter-spacing="-5">
+        fill="white" font-family="Arial Black, sans-serif" font-weight="900" font-size="120" letter-spacing="-6">
     Kod Kasaba
   </text>
 </svg>
