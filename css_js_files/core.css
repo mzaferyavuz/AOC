@@ -1,0 +1,1786 @@
+.domkit-border { border: 1px solid #bbb; }
+.domkit-border-top    { border-top:    1px solid #bbb; }
+.domkit-border-right  { border-right:  1px solid #bbb; }
+.domkit-border-bottom { border-bottom: 1px solid #bbb; }
+.domkit-border-left   { border-left:   1px solid #bbb; }
+.domkit-sel {
+  background-color: #dcdcdc !important;
+}
+:focus .domkit-sel, .domkit-sel.pin {
+  background-color: #3498db !important;
+  color: #fff !important;
+}
+:focus .domkit-sel a {
+  color: #fff !important;
+}
+.domkit-noselect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.domkit-control {
+  box-sizing: border-box;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  padding: 5px 0;
+  line-height: 1.2;
+  vertical-align: top;
+}
+.domkit-control:not(input):empty:before {
+  content: "\200b";
+}
+.domkit-control[disabled],
+.domkit-control.disabled { opacity: 0.3; }
+.domkit-control[readonly],
+.domkit-control.readonly { background: #f8f8f8; }
+/* this disables hrefs links */
+a.domkit-control.disabled { pointer-events:none; }
+.domkit-resize-splitter {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+}
+.domkit-control-button {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding: 4px 10px;
+  cursor: default;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.domkit-control-button:hover { background: #f5f5f5; }
+.domkit-control-button.down  { background: #ddd; }
+.domkit-control-button.selected,
+.domkit-control-button.selected:hover {
+  color: #fff;
+  background-color: hsl(204, 70%, 53%); /*#3498db;*/
+  border-color: hsl(204, 70%, 43%);
+}
+.domkit-control-button.def-action {
+  color: #fff;
+  background: hsl(204, 70%, 53%);
+  border-color: hsl(204, 70%, 43%);
+}
+.domkit-control-button.def-action.down {
+  background: hsl(204, 70%, 43%);
+}
+.domkit-control-text {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  margin: 0;
+  padding: 4px;
+}
+.domkit-control-button:focus,
+.domkit-control-text:focus {
+  border-color: #3498db;
+}
+.domkit-control-button.def-action:focus {
+  background: hsl(204, 70%, 60%);
+  border-color: hsl(204, 70%, 43%);
+}
+.domkit-control-button.def-action.down:focus {
+  background: hsl(204, 70%, 43%);
+}
+.domkit-control.group-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.domkit-control.group-middle {
+  border-radius: 0;
+  border-left: none;
+}
+.domkit-control.group-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+.domkit-control.disclosure {
+  position: relative;
+  text-align: left;
+  padding-right: 20px;
+  overflow: hidden;
+}
+.domkit-control.disclosure:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #555;
+}
+.domkit-control.disclosure-list {
+  position: relative;
+  text-align: left;
+  padding-right: 20px;
+  overflow: hidden;
+}
+.domkit-control.disclosure-list:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 4px solid #555;
+}
+.domkit-control.disclosure-list:after {
+  content: "";
+  position: absolute;
+  bottom: calc(50% - 6px);
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+
+div.domkit-AccordionBox {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+div.domkit-Box {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+div.domkit-Button {
+  outline: none;
+}
+div.domkit-Button:focus {
+  z-index: 2;
+  position: relative;  /* needed to make z-index work */
+}
+
+div.domkit-CardBox {
+}
+
+input.domkit-Checkbox {
+  position: relative;
+  bottom: -2px;
+  margin:  0;
+  padding: 0;
+}
+label input.domkit-Checkbox + span.domkit-Label {
+  margin-left: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+input.domkit-Checkbox[disabled] + span.domkit-Label {
+  opacity: 0.3;
+}
+
+div.domkit-Combo {
+  box-sizing: border-box;
+  display: inline-block;
+  white-space: nowrap;
+}
+div.domkit-Combo input.domkit-TextField {
+  width: calc(100% - 23px);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+div.domkit-Combo div.domkit-Button {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 23px;
+  padding-left:  0;
+  padding-right: 0;
+}
+div.domkit-Combo div.domkit-ListButton:before { right: 8px; }
+div.domkit-Combo div.domkit-ListButton:after  { right: 8px; }
+
+div.domkit-Dialog {
+  outline: none;
+}
+div.domkit-Dialog-frame {
+  background: #f2f2f2;
+  border: 1px solid #aaa;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.4);
+  max-width:  calc(100% - 24px);
+  max-height: calc(100% - 24px);
+}
+div.domkit-Dialog-title {
+  text-align: center;
+  display: block;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+div.domkit-Dialog-title .def-label {
+  font-weight: 500;
+}
+div.domkit-Dialog-mask {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  display: -webkit-flex;
+          align-items: center;
+  -webkit-align-items: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.domkit-dnd-over::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2ecc71;
+  opacity: 0.3;
+}
+
+div.domkit-FlexBox {
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display: flex;
+}
+
+div.domkit-FlipBox {
+  -webkit-perspective: 800px;
+     -moz-perspective: 800px;
+          perspective: 800px;
+}
+.domkit-FlipBox-card {
+  width:  100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform .5s;
+     -moz-transition: -moz-transform .5s;
+          transition: transform .5s;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.domkit-FlipBox-card.flip {
+  -webkit-transform: rotateY(-180deg);
+     -moz-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.domkit-FlipBox-front,
+.domkit-FlipBox-back {
+  z-index: 1;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.domkit-FlipBox-back {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+div.domkit-FlowBox {
+}
+
+div.domkit-GridBox {
+}
+div.domkit-GridBox table {
+  border-collapse: collapse;
+}
+div.domkit-GridBox table td {
+  padding: 0;
+}
+
+span.domkit-Label {}
+
+div.domkit-ListButton {}
+div.domkit-ListButton > div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+div.domkit-ListButton-MenuItem.domkit-MenuItem {
+  white-space: nowrap;
+  padding-left: 22px;
+}
+div.domkit-ListButton-MenuItem.domkit-MenuItem.sel {
+  padding-left: 6px;
+}
+div.domkit-ListButton-MenuItem.domkit-MenuItem.sel:before {
+  content: "\2713";
+  width: 16px;
+  float: left;
+}
+
+div.domkit-Menu {
+  background: #fff !important;
+  border-radius: 3px;
+  overflow: auto;
+  outline: none;
+  padding: 5px 0;
+}
+div.domkit-MenuItem {
+  display: block;
+  padding-left: 10px;
+  padding-right: 20px;
+  min-width: 100px;
+  cursor: default;
+}
+
+div.domkit-Popup {
+  position: absolute;
+  outline: none;
+  background: rgba(248, 248, 248, 0.95);
+  border: 1px solid #ddd;
+  box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+div.domkit-Popup-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+div.domkit-ProgressBar {
+  width: 200px;
+}
+
+input.domkit-RadioButton {
+  position: relative;
+  bottom: -2px;
+  margin:  0;
+  padding: 0;
+}
+label input.domkit-RadioButton + span.domkit-Label {
+  padding-left: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+input.domkit-RadioButton[disabled] + span.domkit-Label {
+  opacity: 0.3;
+}
+
+div.domkit-SashBox {
+  overflow: hidden;  /* required for dir=right */
+  position: relative;
+}
+div.domkit-SashBox-div {}
+
+div.domkit-ScrollBox {
+  overflow: auto;
+}
+
+div.domkit-Sheet {
+  position: absolute;
+  overflow: hidden;
+  outline: none;
+}
+div.domkit-Sheet-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+div.domkit-Table {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+}
+div.domkit-Table:focus {
+  outline: none;
+}
+div.domkit-Table-scrollbar {
+  position: absolute;
+  box-sizing: border-box;
+  background: transparent;
+  border: 0px solid transparent;
+  overflow: hidden;
+  -webkit-transition: background 200ms 1s, border-color 1s 1s;
+     -moz-transition: background 200ms 1s, border-color 1s 1s;
+          transition: background 200ms 1s, border-color 1s 1s;
+}
+div.domkit-Table-scrollbar > div {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: background 500ms 1s;
+     -moz-transition: background 500ms 1s;
+          transition: background 500ms 1s;
+}
+div.domkit-Table-scrollbar:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: #ccc;
+  -webkit-transition: background 100ms, border-color 500ms;
+     -moz-transition: background 100ms, border-color 500ms;
+          transition: background 100ms, border-color 500ms;
+}
+div.domkit-Table-scrollbar.active > div,
+div.domkit-Table-scrollbar:hover > div {
+  background: #777;
+  -webkit-transition: background 250ms;
+     -moz-transition: background 250ms;
+          transition: background 250ms;
+}
+div.domkit-Table-thead {
+  /* required */
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  /* style */
+  box-sizing: border-box;
+  background: #ececee;
+  border-bottom: 1px solid #a9a9a9;
+}
+div.domkit-Table-header-popup {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  background: #ececee;
+  border-left: 1px solid #a9a9a9;
+}
+div.domkit-Table-header-popup:active {
+  background: #ddd;
+}
+div.domkit-Table-header-popup div {
+  width: 12px;
+  height: 1px;
+  background-color: #999;
+  margin: 3px 0;
+}
+div.domkit-Table-header-sort:before {
+  content: "\25bc";
+  color: #999;
+  font-size: 10px;
+  float: right;
+}
+div.domkit-Table-header-sort.popup {
+  padding-right: 26px;
+}
+div.domkit-Table-header-sort.up:before {
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+div.domkit-Table-tbody {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+div.domkit-Table-header {
+  position: absolute;
+  box-sizing: border-box;
+  border-right: 1px solid #a9a9a9;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.domkit-Table-header:active { background: #ddd; }
+div.domkit-Table-header.last { border-right: none; }
+div.domkit-Table-cell {
+  position: absolute;
+  box-sizing: border-box;
+  border-right: 1px solid #e4e4e5;
+  padding: 0 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.domkit-Table-cell.last { border-right: none; }
+div.domkit-Table-cell.odd  { background: #fff; }
+div.domkit-Table-cell.even { background: #f9f9fa; }
+
+textarea.domkit-TextArea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+input.domkit-TextField {
+  outline: none;
+}
+input.domkit-TextField[type='password'] {
+  font-family: sans-serif;
+}
+
+div.domkit-Tree {
+  overflow: auto;
+  background: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+div.domkit-Tree:focus {
+  outline: none;
+}
+div.domkit-Tree-node {
+  position: relative;
+  box-sizing: border-box;
+  cursor: default;
+  white-space: nowrap;
+  padding: 3px 5px;
+  line-height: 1;
+}
+div.domkit-Tree-node-expander {
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 6px);
+  width: 16px;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+:focus div.domkit-sel div.domkit-Tree-node-expander { color: #fff }
+:focus div.domkit-Tree-node.domkit-sel.down { background: #2980b9 !important; }
+div.domkit-Tree-node-block.expanded > div.domkit-Tree-node div.domkit-Tree-node-expander {
+  -webkit-transform: rotate(90deg);
+}
+div.domkit-Tree-node div:nth-child(2) {
+  display: inline-block;
+  width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.domkit-WellBox {
+  background: #e5e5e5;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* BASICS */
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: Menlo, Consolas, monospace;
+  font-size: 9pt;
+  line-height: 1.5;
+  height: 100%;
+  color: black;
+  direction: ltr;
+}
+
+/* PADDING */
+
+.CodeMirror-lines {
+  padding: 4px 0; /* Vertical padding around content */
+}
+.CodeMirror pre {
+  padding: 0 4px; /* Horizontal padding of content */
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: white; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #999; }
+
+/* CURSOR */
+
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+}
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7;
+}
+@-moz-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@-webkit-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror-overwrite .CodeMirror-cursor {}
+
+.cm-tab { display: inline-block; text-decoration: inherit; }
+
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0; right: 0; top: -50px; bottom: -20px;
+  overflow: hidden;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0; bottom: 0;
+  position: absolute;
+}
+
+/* DEFAULT THEME */
+
+.cm-s-default .cm-header {color: blue;}
+.cm-s-default .cm-quote {color: #090;}
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+.cm-strikethrough {text-decoration: line-through;}
+
+.cm-s-default .cm-keyword {color: #00f;}
+.cm-s-default .cm-atom {color: #219;}
+.cm-s-default .cm-number {color: #808;}
+.cm-s-default .cm-def {color: #00f;}
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
+.cm-s-default .cm-comment {color: #080;}
+.cm-s-default .cm-string {color: #088;}
+.cm-s-default .cm-string-2 {color: #f50;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-qualifier {color: #555;}
+.cm-s-default .cm-builtin {color: #00f;}
+.cm-s-default .cm-bracket {color: #f00;}
+.cm-s-default .cm-tag {color: #170;}
+.cm-s-default .cm-attribute {color: #00c;}
+.cm-s-default .cm-hr {color: #999;}
+.cm-s-default .cm-link {color: #00c;}
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+
+.CodeMirror-composing { border-bottom: 2px solid; }
+
+/* OLD
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0f0;}
+*/
+div.CodeMirror span.CodeMirror-matchingbracket { background: #ff0; }
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
+.CodeMirror-activeline-background {background: #e8f2ff;}
+
+/* STOP */
+
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.CodeMirror-scroll {
+  overflow: scroll !important; /* Things will break if this is overridden */
+  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -30px; margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: none; /* Prevent dragging from highlighting the element */
+  position: relative;
+}
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+}
+.CodeMirror-vscrollbar {
+  right: 0; top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.CodeMirror-hscrollbar {
+  bottom: 0; left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.CodeMirror-scrollbar-filler {
+  right: 0; bottom: 0;
+}
+.CodeMirror-gutter-filler {
+  left: 0; bottom: 0;
+}
+
+.CodeMirror-gutters {
+  position: absolute; left: 0; top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+}
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 4;
+}
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.CodeMirror-gutter-wrapper ::selection { background-color: transparent }
+.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }
+
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px; /* prevents collapsing before first draw */
+}
+.CodeMirror pre {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 0;
+}
+
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px; /* Force widget margins to stay inside of the container */
+}
+
+.CodeMirror-widget {}
+
+.CodeMirror-rtl pre { direction: rtl; }
+
+.CodeMirror-code {
+  outline: none;
+}
+
+/* Force content-box sizing for the elements where we expect it */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+.CodeMirror-measure pre { position: static; }
+
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+
+.CodeMirror-selected { background: #d9d9d9; }
+.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+.CodeMirror-crosshair { cursor: crosshair; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, .4);
+}
+
+/* Used to force a border model for a node */
+.cm-force-border { padding-right: .1px; }
+
+@media print {
+  /* Hide the cursor when printing */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+
+/* See issue #2901 */
+.cm-tab-wrap-hack:after { content: ''; }
+
+/* Help users use markselection to safely style text background */
+span.CodeMirror-selectedtext { background: none; }
+
+/*************************************************************************
+* show-hints.css
+*************************************************************************/
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 2px;
+
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 3px;
+  border: 1px solid silver;
+
+  background: white;
+  font-size: 90%;
+  font-family: monospace;
+
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: black;
+  cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+  background: #08f;
+  color: white;
+}
+
+/*************************************************************************
+* dialog.css
+*************************************************************************/
+
+.CodeMirror-dialog {
+  position: absolute;
+  left: 0; right: 0;
+  background: inherit;
+  z-index: 15;
+  padding: .1em .8em;
+  overflow: hidden;
+  color: inherit;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 1px solid #eee;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-top: 1px solid #eee;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 20em;
+  color: inherit;
+  font-family: monospace;
+}
+
+.CodeMirror-dialog button {
+  font-size: 70%;
+}
+
+/*************************************************************************
+*
+* Fantom extras
+*
+* Additional tweaks from above:
+*  - include show-hints.css
+*  - include dialog.css
+*  - div.CodeMirror span.CodeMirror-matchingbracket {color: #0f0;}
+*
+*************************************************************************/
+
+.CodeMirror-mark-highlight    { background: #ff0; }
+.CodeMirror-mark-highlightCur { background: #ff0; text-decoration: underline; }
+.CodeMirror-mark-err          { background: #ff0; text-decoration: red underline; }
+
+/*************************************************************************
+* CodeMirror.dom element
+*************************************************************************/
+
+div.codemirror-Editor {
+  width: 100%;
+  height: 100%;
+}
+
+div.codemirror-SingleLine
+{
+  background: white;
+  border: 1px #bbb solid;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+
+
+
+/*
+// Copyright (c) 2015, SkyFoundry LLC
+// All Rights Reserved
+//
+// History:
+//    3 Mar 2015  Andy Frank  Creation
+//   21 Jan 2016  Andy Frank  Reboot
+//    2 Oct 2017  Andy Frank  Update to new domkit CSS design
+*/
+
+/********************************************************************
+ * Global
+ *******************************************************************/
+
+html { height: 100%; }
+
+body {
+  height: 100%;
+  overflow: hidden;
+  font: 13px 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+a { color: #2980b9; }
+
+.domkit-control { height: 24px; }
+.domkit-control-button { color: #555; }
+.domkit-control-text   { padding-bottom: 3px; }
+
+input.domkit-Checkbox    { bottom: 0; }
+input.domkit-RadioButton { bottom: 0; }
+label input.domkit-Checkbox    { bottom: -4px; }
+label input.domkit-RadioButton { bottom: -4px; }
+
+.ui-font-mono {
+  font: 12px 'Roboto Mono', monospace !important;
+  line-height: 16px !important;
+}
+
+/********************************************************************
+ * Workspace
+ *******************************************************************/
+
+/* Workspace */
+div.ui-Workspace {
+  background: #f7f7f7;
+  outline: 0;
+}
+
+/* WsHeader */
+div.ui-WsHeader {
+  background: #3d6ba0; /*#2a5e92;*/ /*#4880b4;*/
+  color: #fff;
+  transition: background 300ms;
+}
+div.ui-WsHeader div.domkit-FlowBox::-webkit-scrollbar { display:none; }
+div.ui-WsHeader div.domkit-Button {
+  border-color: transparent;
+  background: none;
+  box-shadow: none !important;
+  color: #fff;
+}
+div.ui-WsHeader div.domkit-Button:focus { box-shadow: none !important; }
+div.ui-WsHeader div.domkit-Button:hover { border-color: transparent; background: rgba(0,0,0,0.15); }
+div.ui-WsHeader div.domkit-Button.down  { border-color: transparent; background: rgba(0,0,0,0.3); }
+div.ui-WsHeader > div:first-child { /*background: #333;*/ }
+div.ui-WsHeader div.domkit-Button.tab { border-radius: 2px 2px 0 0; height: 28px; }
+div.ui-WsHeader div.domkit-Button.tab:hover { background: rgba(0,0,0,0.08); }
+div.ui-WsHeader div.domkit-Button.tab.down  { background: rgba(0,0,0,0.18); }
+div.ui-WsHeader div.domkit-Button.tab.sel {
+  color: #000;
+  background: #f7f7f7;
+  border-color: #f7f7f7;
+}
+/* vdisabled so not to clash with Button.disabled */
+div.ui-WsHeader div.domkit-Button.tab.vdisabled { text-decoration: line-through; }
+div.ui-WsHeader div.domkit-Button.tab.vdisabled:not(.sel) { color: rgba(255,255,255,0.3); }
+div.ui-WsHeader div.domkit-Button.tab.vdisabled.sel       { color: #ccc;    }
+/* cannot inline parent :hover for WsViewMenu */
+div.ui-WsViewMenu-faux:hover img { filter: brightness(100); }
+
+/* WsAlertView */
+div.ui-WsAlertView {
+  display: inline-block;
+  border-radius: 0 0 2px 2px;
+  width: auto;
+  height: 34px;
+  line-height: 35px;
+  padding: 0 10px;
+  margin: 0 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+div.ui-WsAlertView.active {}
+div.ui-WsAlertView.active:hover  { box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.08); }
+div.ui-WsAlertView.active:active { box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.16); }
+
+/********************************************************************
+ * Domkit
+ *******************************************************************/
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Font weights */
+.font-light { font-weight:300; color:#777; }
+.font-bold  { font-weight:500; }
+.font-black { font-weight:700; }
+
+/* Icon */
+img.ui-Icon { display: inline-block; }
+.domkit-MenuItem:hover img.ui-Icon { filter: brightness(100); }
+/* TODO: need to restrict matches; .mono on ToggleButton and/or Icon?
+   .domkit-ToggleButton.down img.ui-Icon { filter: brightness(100); } */
+
+/* UiLabel */
+span.ui-UiLabel { white-space: nowrap; }
+span.ui-UiLabel img.ui-Icon {}
+span.ui-UiLabel .domkit-control { padding: 0; }
+span.ui-UiLabel img.ui-Icon + .domkit-control { padding-left: 4px; }
+span.ui-UiLabel .domkit-control + img.ui-Icon { padding-left: 4px; }
+:focus .domkit-sel span.ui-UiLabel { color: #fff !important; }
+
+/* Label.popup */
+span.domkit-Label.popup:hover {
+  color: #2980B9;
+  border-bottom: 1px dotted #2980B9;
+  cursor: default;
+}
+
+/* Button.empty.disclosure */
+.domkit-control.empty.disclosure {
+  padding-right: 0;
+  width: 21px;
+}
+
+/* Button.link */
+div.domkit-Button.link {
+  color: #5a89c2;
+  font-size: 12px;
+  font-weight: 500;
+  border-color: transparent;
+  background: none;
+  box-shadow: none !important;
+}
+div.domkit-Button.link:hover { border-color: #eee; background: #eee; }
+div.domkit-Button.link.down  { border-color: #ddd; background: #ddd; }
+div.domkit-Button.link img.ui-Icon.inline {
+  width: 14px !important;  /* <-- is this what we want? */
+  height: 14px !important;
+  padding-bottom: 2px;
+}
+
+div.domkit-Button a {
+  display: inline-block;
+  line-height: 24px;
+  height:24px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+/* Button.flush */
+div.domkit-Button.flush {
+  border-color: transparent;
+  background: none;
+  box-shadow: none !important;
+}
+div.domkit-Button.flush:hover { border-color: #eee; background: #eee; }
+div.domkit-Button.flush.down  { border-color: #ddd; background: #ddd; }
+div.domkit-Button.flush.down.selected {
+  border-color: #3498db;
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Button.green */
+div.domkit-Button.green {
+  color: #fff;
+  background: hsl(145, 63%, 44%);
+  border-color: hsl(145, 63%, 37%);
+}
+div.domkit-Button.green:hover { background: hsl(145, 63%, 41%);  }
+div.domkit-Button.green.down  { background: hsl(145, 63%, 38%);  }
+
+/* Button.paleGreen */
+div.domkit-Button.paleGreen {
+  color:        hsl(145, 63%, 42%);
+  background:   hsl(145, 63%, 96%);
+  border-color: hsl(145, 63%, 48%);
+}
+div.domkit-Button.paleGreen:hover { background: hsl(145, 63%, 93%); }
+div.domkit-Button.paleGreen.down  { background: hsl(145, 63%, 88%);  }
+
+/* Button.paleBlue */
+div.domkit-Button.paleBlue {
+  color:        hsl(215, 25%, 55%);
+  background:   hsl(215, 80%, 98%);
+  border-color: hsl(215, 25%, 75%);
+}
+div.domkit-Button.paleBlue:hover { background: hsl(215, 80%, 96%);  }
+div.domkit-Button.paleBlue.down  { background: hsl(215, 80%, 92%);  }
+div.domkit-ToggleButton.paleBlue:hover {
+  color: hsl(215, 25%, 55%);
+  border-color: hsl(215, 25%, 75%);
+}
+
+/* ToggleButton.item */
+div.domkit-ToggleButton.item {
+  border-color: transparent;
+  background: #eee;
+  box-shadow: none !important;
+}
+div.domkit-ToggleButton.item.down { border-color: transparent; background: #ddd; }
+div.domkit-ToggleButton.item.selected { color: #fff; background: #3498db; }
+div.domkit-ToggleButton.item.selected:active { background: #2f89c5; }
+
+/* Icon */
+img.ui-Icon-inline {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/* Fandoc */
+.ui-fandoc { line-height: 1.3em; }
+.ui-fandoc code { color:#666; font: 12px 'Roboto Mono'; }
+.ui-fandoc pre  { color:#666; font: 12px 'Roboto Mono'; margin: 1em; }
+.ui-fandoc hr   { height: 1px; border: none; background: #e7e7e7; }
+.ui-fandoc p > img { display: block; margin: 0 auto; }
+
+/* Flash */
+div.ui-Flash div.domkit-Button.link { color: #fff; }
+div.ui-Flash div.domkit-Button.link:hover { border-color: rgba(0,0,0,0); background: rgba(0,0,0,0.1); }
+div.ui-Flash div.domkit-Button.link.down  { border-color: rgba(0,0,0,0); background: rgba(0,0,0,0.2); }
+div.ui-Flash.force-commit div.domkit-Button { color: hsl(21, 70%, 25%); border-color: hsl(21, 70%, 36%); }
+div.ui-Flash.force-commit div.domkit-Button:hover { background: hsl(21, 90%, 94%); }
+div.ui-Flash.force-commit div.domkit-Button.down  { background: hsl(21, 90%, 81%); }
+
+/* ui-small-tabs */
+div.ui-small-tabs div.domkit-ToggleButton {
+  font-weight: 500;
+  font-size: 12px;
+  padding-top: 3px;
+  height: 22px;
+}
+
+/* TabBox.flush */
+div.ui-TabBox.flush {}
+div.ui-TabBox.flush div.domkit-ToggleButton { border: none; background: none; border-radius: 0; }
+div.ui-TabBox.flush div.domkit-ToggleButton:hover { border-bottom: 1px solid #ccc; }
+div.ui-TabBox.flush div.domkit-ToggleButton.down.selected {
+  color: #000;
+  font-weight: 500;
+  border-bottom: 2px solid #3498db;
+}
+
+/* ContentDialog */
+div.ui-ContentDialog-buttons { /*background: #e5e5e5;*/ }
+
+/* GridBox.table */
+div.domkit-GridBox.table {
+  background: #fff;
+  font-size: 12px;
+  line-height: 14px;
+}
+div.domkit-GridBox.table table { width: 100%; }
+div.domkit-GridBox.table table tr:first-child {
+  font-weight: 500;
+  background: #ececec;
+  border-bottom: 1px solid #bbb;
+}
+div.domkit-GridBox.table.no-header table tr:first-child {
+  font-weight: normal;
+  background: #f9f9f9;
+  border-bottom: none;
+}
+div.domkit-GridBox.table table tr:nth-child(odd) { background: #f9f9f9; }
+div.domkit-GridBox.table table td {
+  white-space: nowrap;
+  padding: 0 4px;
+  border-right: 1px solid #d9d9d9;
+}
+div.domkit-GridBox.table table td:last-child {
+  width: 100%;
+  border-right: none;
+}
+
+div.ui-ListBox div.domkit-Table-cell {
+  font-size: 13px;
+}
+
+/* AppPicker */
+div.ui-AppPicker div.domkit-ToggleButton.disabled {
+  opacity: 0.15;
+  filter: grayscale(1);
+}
+
+/* Drag-and-Drop */
+.ui-dnd-dropzone * { pointer-events: none; }
+
+.ui-dnd-over:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #3498db;
+  background: rgba(52, 152, 219, 0.3);
+}
+
+/** UiPimTable **/
+div.ui-UiPimTable-prez-col {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 1px 0px #3498db, inset -1px 0px #3498db;
+}
+div.ui-UiPimTable-prez-col-first {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 1px 0px #3498db, inset -1px 0px #3498db, inset 0px 1px #3498db;
+}
+div.ui-UiPimTable-prez-col-last {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 1px 0px #3498db, inset -1px 0px #3498db, inset 0px -1px #3498db;
+}
+div.ui-UiPimTable-prez-row  {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 0px 1px #3498db, inset 0px -1px #3498db;
+}
+div.ui-UiPimTable-prez-row-first {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 0px 1px #3498db, inset 0px -1px #3498db, inset 1px 0px #3498db;
+}
+div.ui-UiPimTable-prez-row-last {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 0px 1px #3498db, inset 0px -1px #3498db, inset -1px 0px #3498db;
+}
+div.ui-UiPimTable-prez-cell {
+  background: rgba(52, 152, 219, 0.3) !important;
+  box-shadow: inset 0px 0px 0px 1px #3498db;
+}
+
+/** UiPimTree **/
+div.ui-UiPimTree-node {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 6px;
+   cursor: default;
+   outline: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+div.ui-UiPimTree-node.expanded  + div.kids { display: block; }
+div.ui-UiPimTree-node.collapsed + div.kids { display: none;  }
+div.ui-UiPimTree-node.active { background: #f8f8f8; }
+div.ui-UiPimTree-node.selected { background: #3498db; color: #fff; }
+div.ui-UiPimTree-node.selected img { filter: brightness(100); }
+div.ui-UiPimTree-node.dragging { opacity: 0.3; }
+div.ui-UiPimTree-node.disabled { opacity: 0.3; }
+div.ui-UiPimTree-node img.disclosure { width:16px; height: 16px; }
+div.ui-UiPimTree-node img.def  { width:16px; height: 16px; }
+div.ui-UiPimTree-node span.def { padding: 0 4px; }
+div.ui-UiPimTree-node div.def-aux {
+  margin-left: auto;
+  color: #2980b9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  font-size: 11px;
+  white-space: nowrap;
+  padding: 2px 4px;
+}
+div.ui-UiPimTree-node.selected div.def-aux { color: #fff; }
+
+/** UiPimCardDeck **/
+div.ui-UiPimCardDeck { }
+
+/** UiPimCard **/
+div.ui-UiPimCard {  }
+
+/********************************************************************
+ * Input
+ *******************************************************************/
+
+div.ui-Input {
+  display: inline-block;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+}
+
+div.ui-MarkerInput-marker.down { color:#fff; background: #3498db; }
+div.ui-MarkerInput-remove.down { color:#fff; background: #e74c3c; }
+
+div.ui-RefInput-sel div.domkit-Table-cell { border-right: none; }
+
+div.ui-TimeInput {
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 24px;
+}
+div.ui-TimeInput-field {
+  display: inline-block;
+  width: 25px;
+  height: 100%;
+  text-align: center;
+  outline: none;
+}
+div.ui-TimeInput-field.sel { color: #fff !important; background: #3498db !important; }
+div.ui-TimeInput-field:focus { background: #eee; }
+div.ui-TimeInput.disabled { opacity: 0.3; }
+div.ui-TimeInput.disabled div.ui-TimeInput-field:focus { background: none; }
+
+/********************************************************************
+ * Views
+ *******************************************************************/
+
+/* UiViewBar */
+div.ui-UiViewBar { overflow-x: auto; white-space: nowrap; }
+
+/* HomeView */
+div.ui-HomeView div.proj:hover  { background: #eee; }
+div.ui-HomeView div.proj:active { background: #3498db; color: #fff; }
+
+/* TextView */
+div.ui-TextView textarea.domkit-TextArea {
+  border: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+/* FandocView */
+div.ui-FandocView .ui-fandoc {
+  overflow: auto;
+  background: #fff;
+  padding: 0 1em;
+  border: 1px solid #d9d9d9;
+}
+
+/* PageView */
+div.ui-PageView {}
+
+/* ChartView */
+div.ui-CvpButton {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  height: 30px;
+  padding: 7px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+div.ui-CvpButton span.info { color: #aaa; }
+div.ui-CvpButton:hover { background: #f5f5f5; }
+div.ui-CvpButton.down  { background: #ddd; }
+div.ui-CvpButton.sel { background: #3498db; color: #fff; }
+div.ui-CvpButton.sel img { filter: brightness(100); }
+div.ui-CvpButton.sel span.info { color: #fff; }
+div.ui-CvpChartBox.drop-over {
+  border-radius: 3px;
+  background: #3498db !important;
+  color: #fff;
+}
+div.ui-CvpChartBox.drop-over img { filter: brightness(100); }
+div.ui-CvpPlotBox.domkit-dnd-over::after { background: none; }
+div.ui-TvpRuleBox div.rules.domkit-dnd-over::after { background: none; }
+/*
+// Copyright (c) 2016, SkyFoundry LLC
+// All Rights Reserved
+//
+// History:
+//   6 Jul 2016  Andy Frank  Creation
+*/
+
+div.uiMisc-WbPanel div.domkit-Button.tab       { border-color: transparent; }
+div.uiMisc-WbPanel div.domkit-Button.tab:hover { border-color: transparent; }
+div.uiMisc-WbPanel div.domkit-Button.tab.down  { border-color: transparent; }
+
+div.uiMisc-WbRedorderBox.domkit-dnd-over::after { background: transparent; }
+
+div.domkit-ToggleButton.ui-LogView-levelGroup { border: transparent; background: transparent; }
+div.domkit-ToggleButton.ui-LogView-levelGroup:hover { background: #eee; }
+div.domkit-ToggleButton.ui-LogView-levelGroup.down { background: #3498db; color: #fff; }
+
+div.domkit-Button.uiMisc-swivel { border: 0; background: transparent; }
+div.domkit-Button.uiMisc-swivel.down { background-color: #ccc; }
+
+/*
+// Copyright (c) 2017, SkyFoundry LLC
+// All Rights Reserved
+//
+// History:
+//   10 Jan 2017  Andy Frank  Creation
+*/
+
+/********************************************************************
+ * SiteBuilder
+ *******************************************************************/
+
+div.ui-UiPimTree-node div.sb-aux {
+  margin-left: auto;
+  padding: 2px 8px 1px 8px;
+  border-radius: 20px;
+  border: 1px solid #e2e2e2;
+  color: #ccc;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+
+div.ui-UiPimTree-node div.sb-aux.conn {
+  color: #9b59b6;
+  border-color: hsl(283, 39%, 85%);
+}
+
+div.ui-UiPimTree-node.selected div.sb-aux {
+  color: #fff;
+  border-color: #fff;
+}
+
+div.ui-UiPimTree-node div.sb-aux.group { color: #ccc; border: none; }
+div.ui-UiPimTree-node.selected div.sb-aux.group { color: #fff; }
+
+.uiBuilder-info-box * { pointer-events: none; }
+
+.uiBuilder-dnd-over:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #3498db;
+  background: rgba(52, 152, 219, 0.3);
+}
+
+table.uiBuilder-SbBindDialog-table {
+  border-collapse: collapse;
+  background: #fff;
+  width: 100%;
+}
+
+table.uiBuilder-SbBindDialog-table tr:first-child {
+  border-bottom: 1px solid #a9a9a9;
+  background: #ececec !important;
+
+}
+
+table.uiBuilder-SbBindDialog-table th {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  padding: 4px 8px 3px 8px;
+  border-right: 1px solid #a9a9a9;
+}
+
+table.uiBuilder-SbBindDialog-table th:last-child {
+  border-right: none;
+}
+
+table.uiBuilder-SbBindDialog-table tr:nth-child(odd) {
+  background: #f9f9fa
+}
+
+table.uiBuilder-SbBindDialog-table tr:last-child {
+  border-bottom: none;
+}
+
+table.uiBuilder-SbBindDialog-table td {
+  padding: 4px 8px;
+  white-space: nowrap;
+  border-right: 1px solid #d9d9d9;
+}
+
+table.uiBuilder-SbBindDialog-table td:last-child {
+  border-right: none;
+}
+
+/********************************************************************
+ * ViewBuilder
+ *******************************************************************/
+
+div.uiBuilder-ViewBuilder {
+}
+
+/** Tool **/
+div.uiBuilder-ViewBuilder-tool {
+  border: 1px solid #d9d9d9;
+  box-shadow: #e2e2e2 0 1px 3px;
+  background: #fff;
+  padding: 10px;
+}
+
+/** Canvas **/
+div.uiBuilder-ViewBuilder-canvas {}
+div.uiBuilder-ViewBuilder-canvas div.mask {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+}
+div.uiBuilder-ViewBuilder-canvas div.sel-view::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset #3498db 0 0 0 2px, inset #fff 0 0 0 3px;
+}
+
+/** Tree **/
+div.uiBuilder-ViewBuilder-tree:focus div.domkit-Box.domkit-sel img {
+  filter: brightness(100);
+}
+div.uiBuilder-ViewBuilder-tree:focus  div.domkit-Box.domkit-sel div.domkit-Button.link { color: #fff; }
+div.uiBuilder-ViewBuilder-tree div.domkit-Button.link { padding: 0 5px; }
+div.uiBuilder-ViewBuilder-tree div.domkit-Button.link:hover {
+  border-color: transparent;
+  background:   rgba(0,0,0,0.1);
+}
+div.uiBuilder-ViewBuilder-tree div.domkit-Button.link.down {
+  border-color: transparent;
+  background:   rgba(0,0,0,0.2);
+}
+
+div.uiBuilder-ViewBuilder-reorderBox.domkit-dnd-over::after {
+  background: transparent;
+}
+
+/** Inspector **/
+div.uiBuilder-ViewBuilder-inspector {}
+
+/** VbNew **/
+div.domkit-Button.uiBuilder-flush {
+  height: auto;
+  line-height: 1em;
+  padding: 14px 20px 4px 20px;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+div.domkit-Button.uiBuilder-flush img {
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: #eee 0 2px 2px;
+}
+div.domkit-Button.uiBuilder-flush:hover { background: #ddd; }
+div.domkit-Button.uiBuilder-flush.down { color: #fff; background: #3498db; }
+div.domkit-Button.uiBuilder-flush:not(.disabled):hover img,
+div.domkit-Button.uiBuilder-flush.down img { border-color: #2d5078; box-shadow: none; }
+
+
+/*
+// Copyright (c) 2019, SkyFoundry LLC
+// All Rights Reserved
+//
+// History:
+//   18 Jul 2019  Brian Frank  Creation
+*/
+
+.uiDev-label-icon {
+  height: 100%;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+
+.uiDev-label-text {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.uiDev-label-text-match {
+  font-weight: 500;
+  color: #00f;
+}
+
+.uiDev-mouseOverButton {
+  border: 1px solid transparent;
+  background: none;
+}
+
+.uiDev-mouseOverButton:hover {
+  background: #eee !important;
+  border: 1px solid #ddd !important;
+}
+
+.uiDev-shortcut-key {
+  width: auto;
+  height: auto;
+  min-width: 20px;
+  padding: 0 2px;
+  margin-right: 2px;
+  text-align: center;
+  color: #555;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+}
+
+

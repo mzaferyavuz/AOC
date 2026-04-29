@@ -1,0 +1,4923 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Doc – Host – Kod Kasaba Analytics</title>
+
+<meta name="google" content="notranslate">
+<link rel="icon" type="image/png" href="">
+<link rel="stylesheet" type="text/css" href="./main_css_js_files/fonts.css">
+<link rel="stylesheet" type="text/css" href="./main_css_js_files/core.css">
+<script type="text/javascript">
+var fan$env = {
+  "ui.locale":"en-US",
+  "ui.loader.attestKey":"a-Nu9j2JS0wYL93PYXyOLPR92ZmP1OW9_4DY9m5ZLeSTo-3bfdf",
+  "ui.loader.user":"{mod:2023-07-28T08:59:27.444Z tz:\"Istanbul\" created:2022-05-10T08:17:03-04:00 New_York userAuth:{c:10000 salt:\"KCKiduV_UYmOxUSH02HJcXRjplM7los5Cb6OjDpfVhA\" scheme:\"scram\" hash:\"SHA-256\"} userAllow:[\"ruleDebug\"] reportCanSave dis:\"Muzaffer Yavuz\" id:@u:muzaffer.yavuz \"Muzaffer Yavuz\" userRole:\"op\" projAccessFilter:\"name == \\\"hgr_Turkey_VIP_Building\\\"\" user email:\"muzaffer.yavuz@honeywell.com\" username:\"muzaffer.yavuz\"}",
+  "ui.loader.flags":"",
+  "main":"ui::Main.main",
+  "ui.loader.sessionKey":"ui-BUBO0tFOKaB9Zdbty8TUoaMN8f-8p_OHYlActx3dAE0-3c379",
+  "ui.loader.localNodeId":"2386b0c1-9240e82c",
+  "ui.loader.prefs":""
+}
+window.addEventListener('load', function() {
+  fan.sys.Env.$invokeMain('ui::Main.main');
+}, false);
+</script>
+<script type="text/javascript" src="./main_css_js_files/core-sys.js"></script>
+<script type="text/javascript" src="./main_css_js_files/core-etc.js"></script>
+<script type="text/javascript" src="./main_css_js_files/core-lang.js"></script>
+<script type="text/javascript" src="./main_css_js_files/core-haystack.js"></script>
+<script type="text/javascript" src="./main_css_js_files/core-fw.js"></script>
+<script type="text/javascript" src="./main_css_js_files/core-codemirror.js"></script>
+<script type="text/javascript" src="./main_css_js_files/core-ui.js"></script><style type="text/css">@-webkit-keyframes kf-0 {
+  0% { -webkit-transform:scale(1); opacity:0.5; }
+  50% { -webkit-transform:scale(1.1); opacity:1.0; }
+  100% { -webkit-transform:scale(1); opacity:0.5; }
+}
+@-moz-keyframes kf-0 {
+  0% { -webkit-transform:scale(1); opacity:0.5; }
+  50% { -webkit-transform:scale(1.1); opacity:1.0; }
+  100% { -webkit-transform:scale(1); opacity:0.5; }
+}
+@keyframes kf-0 {
+  0% { -webkit-transform:scale(1); opacity:0.5; }
+  50% { -webkit-transform:scale(1.1); opacity:1.0; }
+  100% { -webkit-transform:scale(1); opacity:0.5; }
+}
+</style>
+<script type="text/javascript" src="./main_css_js_files/core-admin.js"></script>
+<script type="text/javascript" src="./main_css_js_files/ns-init.js"></script>
+<script type="text/javascript" src="./main_css_js_files/ns-defs.js"></script>
+<link rel="stylesheet" href="./main_css_js_files/doc.css" type="text/css"><style type="text/css">.dom-style-autogen-0:focus { outline:none; }</style></head>
+<body>
+
+
+<div class="domkit-Box domkit-SashBox ui-Workspace" tabindex="0"><div class="domkit-Box ui-WsHeader" style="display: block; float: none; width: 100%; height: 68px;"><div class="domkit-Box" style="height: 34px; padding: 5px 10px 5px 5px;"><div class="domkit-Box domkit-FlowBox" style="width: auto; float: left;"><div class="domkit-control domkit-control-button domkit-Button" tabindex="0" style="padding-top: 0px; padding-bottom: 0px;"><span class="domkit-control domkit-Label ui-UiLabel" style="padding-top: 3px;"><img class="ui-Icon" src="./main_css_js_files/db" style="width: 16px; height: 16px;"><span class="domkit-control domkit-Label" style="padding-top: 1px;">Host</span><img class="ui-Icon" src="./main_css_js_files/chevronDown" style="width: 16px; height: 16px; opacity: 0.6;"></span></div></div><span class="domkit-control domkit-Label" style="padding-top: 0px; padding-left: 10px; height: 24px; line-height: 24px; float: right;"><a href="https://buildingsolutions.honeywell.com/en-US/solutions/ConnectedServices/Pages/default.aspx"><img src="./main_css_js_files/logo-badge.svg" title="Honeywell Analytics" alt="Honeywell Analytics" style="vertical-align: middle; height: 18px;"></a></span><div class="domkit-control domkit-control-button domkit-Button" tabindex="0" style="padding-top: 0px; padding-bottom: 0px; float: right;"><span class="domkit-control domkit-Label ui-UiLabel" style="padding-top: 3px;"><span class="domkit-control domkit-Label" style="padding-top: 1px;">Muzaffer Yavuz</span><img class="ui-Icon" src="./main_css_js_files/chevronDown" style="width: 16px; height: 16px; opacity: 0.6;"></span></div><div class="domkit-control domkit-control-button domkit-Button" tabindex="0" style="padding: 3px 9px; float: right;"><img class="ui-Icon" src="./main_css_js_files/clone" style="width: 16px; height: 16px;"></div><div class="domkit-Box domkit-FlowBox" style="width: auto; float: right;"><div class="domkit-Box ui-UiView ui-WsAlertView" id="ws-alerts" style="top: -40px;">&nbsp;</div></div></div><div class="domkit-Box" style="height: 34px; padding: 6px 5px 0px 10px;"><div class="domkit-Box domkit-FlowBox"><div class="domkit-Box domkit-SashBox" style="width: auto;"><div class="domkit-Box" style="display: block; float: left; width: 47px; height: 100%;"><div class="domkit-control domkit-control-button domkit-Button" tabindex="0" style="padding: 0px 5px; color: rgba(255, 255, 255, 0.6);"><span class="domkit-control domkit-Label ui-UiLabel" style="padding-top: 2px;"><img class="ui-Icon" src="./main_css_js_files/help" style="width: 18px; height: 18px;"><span class="domkit-control domkit-Label" style="padding-top: 2px;">▾</span></span></div></div><div class="domkit-Box domkit-FlowBox" style="overflow-x: auto; white-space: nowrap; display: block; float: left; width: calc(100% - 103px); height: 100%;"><div class="domkit-control domkit-control-button domkit-Button domkit-ToggleButton tab selected down sel" tabindex="0" style="margin-right: 5px;">Doc</div></div><div class="domkit-Box domkit-FlowBox" style="display: block; float: left; width: 56px; height: 100%;"><div class="domkit-control domkit-control-button domkit-Button" tabindex="0" title="View Menu" style="padding: 3px 5px;"><img class="ui-Icon" src="./main_css_js_files/menu" style="width: 16px; height: 16px;"></div><div class="domkit-control domkit-control-button domkit-Button" tabindex="0" title="Open Split View" style="padding: 3px 5px;"><img class="ui-Icon" src="./main_css_js_files/splitView" style="width: 16px; height: 16px;"></div></div></div></div></div></div><div class="domkit-Box domkit-SashBox ui-ViewBox" style="padding: 10px; display: block; float: none; width: 100%; height: calc(100% - 68px);"><div class="domkit-Box ui-UiView" id="ws-left" style="display: block; float: left; width: 100%; height: 100%;"><div class="domkit-Box"><div class="domkit-Box domkit-FlexBox" style="width: 100%; height: 100%; place-content: stretch flex-start; align-items: stretch; flex-flow: column;"><div class="domkit-Box domkit-FlexBox" style="min-height: 32px; padding-bottom: 8px; place-content: stretch flex-start; align-items: center; flex-flow: row; flex: 0 0 auto; height: auto;"><div class="domkit-Box domkit-FlowBox" style="flex: 0 0 auto; width: auto;"><div class="domkit-control domkit-control-button domkit-Button group-left" tabindex="0" style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor;">Index</div><div class="domkit-control domkit-control-button domkit-Button dom-style-autogen-0 disclosure group-middle" tabindex="0" style="border-left-width: medium; border-left-style: none; border-left-color: currentcolor;"></div><div class="domkit-control domkit-control-button domkit-Button group-middle" tabindex="0" style="border-right-width: medium; border-right-style: none; border-right-color: currentcolor;">aoc</div><div class="domkit-control domkit-control-button domkit-Button dom-style-autogen-0 disclosure group-right" tabindex="0" style="border-left-width: medium; border-left-style: none; border-left-color: currentcolor;"></div></div><input type="text" class="domkit-control domkit-control-text domkit-TextField" size="40" placeholder="Search..." style="float: right; margin-left: auto; flex: 0 0 auto;"></div><div class="domkit-Box" style="background: rgb(255, 255, 255); padding: 10px 40px; border: 1px solid rgb(204, 204, 204); overflow: auto; flex: 1 1 0px; height: auto;"><div class="defc">
+
+<div class="defc-nav">
+<ul>
+<li><a href="https://analytics12.honeywellcloud.com/index.html">Index</a></li><li> » </li><li><a href="https://analytics12.honeywellcloud.com/ui/index.html">aoc</a></li></ul>
+</div>
+<hr>
+
+<!-- defc-breadcrumb
+../index Index
+index aoc
+-->
+<div class="defc-main">
+
+<h2 class="defc-main-heading" id="lib"><a href="https://analytics12.honeywellcloud.com/docHaystack/Docs.html#def">lib</a></h2>
+<div class="defc-main-section">
+<h1>lib:aoc</h1>
+
+<p class="TODO">TODO: summary of pod name...</p>
+
+</div>
+
+<h2 class="defc-main-heading" id="meta"><a href="https://analytics12.honeywellcloud.com/docHaystack/Docs.html#meta">meta</a></h2>
+<div class="defc-main-section">
+<table class="defc-props">
+<tbody><tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-ph/def.html">def</a></th>
+<td><a href="https://analytics12.honeywellcloud.com/ui/index.html">lib:aoc</a></td>
+</tr>
+<tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-ph/depends.html">depends</a></th>
+<td><a href="https://analytics12.honeywellcloud.com/lib-ph/index.html">lib:ph</a>, <a href="https://analytics12.honeywellcloud.com/lib-axon/index.html">lib:axon</a>, <a href="https://analytics12.honeywellcloud.com/lib-hx/index.html">lib:hx</a>, <a href="https://analytics12.honeywellcloud.com/lib-skyarc/index.html">lib:skyarc</a>, <a href="https://analytics12.honeywellcloud.com/lib-phIoT/index.html">lib:phIoT</a></td>
+</tr>
+<tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-skyarc/ext.html">ext</a></th>
+<td>✓</td>
+</tr>
+<tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-skyarc/icon.html">icon</a></th>
+<td>app</td>
+</tr>
+<tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-ph/is.html">is</a></th>
+<td><a href="https://analytics12.honeywellcloud.com/lib-ph/lib.html">lib</a></td>
+</tr>
+<tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-ph/lib.html">lib</a></th>
+<td><a href="https://analytics12.honeywellcloud.com/ui/index.html">lib:aoc</a></td>
+</tr>
+<tr>
+<th><a href="https://analytics12.honeywellcloud.com/lib-ph/version.html">version</a></th>
+<td>3.0.144.0</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<h2 class="defc-main-heading" id="funcs">funcs</h2>
+<div class="defc-main-section">
+<table class="defc-props">
+<tbody><tr>
+<th><a href="addAocExtnRules.html">addAocExtnRules</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="addDataLossJob.html">addDataLossJob</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="addHisAppendNA.html">addHisAppendNA</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="addMinMax.html">addMinMax</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="addRelationship.html">addRelationship</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="addSparkGroupings.html">addSparkGroupings</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="addSystemPrimaryKeyEquip.html">addSystemPrimaryKeyEquip</a></th>
+<td>
+<p>Example-addSystemPrimaryKeyEquip("io/filename.csv")</p>
+</td>
+</tr>
+<tr>
+<th><a href="addSystemPrimaryKeyPoint.html">addSystemPrimaryKeyPoint</a></th>
+<td>
+<p>Example-addSystemPrimaryKeyPoint("io/filename.csv")</p>
+</td>
+</tr>
+<tr>
+<th><a href="addSystemPrimaryKeyPoint_FC.html">addSystemPrimaryKeyPoint_FC</a></th>
+<td>
+<p>Example-addSystemPrimaryKeyPoint_FC("io/filename.csv")</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuColdOutCooling.html">ahuColdOutCooling</a></th>
+<td>
+<p>Cooling Mode ON when OA Temperature is Low</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuCoolHeatCycling.html">ahuCoolHeatCycling</a></th>
+<td>
+<p>Compute periods between cooling and heating which do not   meeting a min time</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuCoolPeriods.html">ahuCoolPeriods</a></th>
+<td>
+<p>Given an <code>ahu</code> record computes the periods of cooling</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuCoolPeriods_inter.html">ahuCoolPeriods_inter</a></th>
+<td>
+<p>Gives ahu's cooling period</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuCoolPeriodslessthan100.html">ahuCoolPeriodslessthan100</a></th>
+<td>
+<p>AHU cool Period when cooling valve is less than 100</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuDaStatSpRstNotworking.html">ahuDaStatSpRstNotworking</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuDaTSpRstNotWorking.html">ahuDaTSpRstNotWorking</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuEconPeriods.html">ahuEconPeriods</a></th>
+<td>
+<p>Compute periods when AHU is in economizing mode when the damper   position is over 10%.Params</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuEconandReheat.html">ahuEconandReheat</a></th>
+<td>
+<p>Economizer and Heating ON at same time</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuEquipTagging.html">ahuEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuFanPeriods.html">ahuFanPeriods</a></th>
+<td>
+<p>Compute periods when AHU's supply fan is running or matches given criteria</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuFilterAlarm.html">ahuFilterAlarm</a></th>
+<td>
+<p>AHU Filter is dirty</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuHeatCoolCycling.html">ahuHeatCoolCycling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuHeatPeriods.html">ahuHeatPeriods</a></th>
+<td>
+<p>Computes periods when <code>ahu</code> is in heating</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuHeatPeriods_inter.html">ahuHeatPeriods_inter</a></th>
+<td>
+<p>Gives ahu's heating period</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuHeatPeriodslessthan100.html">ahuHeatPeriodslessthan100</a></th>
+<td>
+<p>AHU heat periods when heating valve is less than 100</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuHotOutHeating.html">ahuHotOutHeating</a></th>
+<td>
+<p>Heating Mode ON when OA Temperature is High</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuHuminManual.html">ahuHuminManual</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuNoCoolPeriods.html">ahuNoCoolPeriods</a></th>
+<td>
+<p>Finds periods where ahu <code>cool</code> <code>cmd</code> is off, if it is a valve check if it is open less than valveThreshold</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuNoCoolPeriods_inter.html">ahuNoCoolPeriods_inter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuNoEconNoCoolPeriods.html">ahuNoEconNoCoolPeriods</a></th>
+<td>
+<p>AHU not in economy mode, identified by damper being open only till the minimum position</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuNoHeatPeriods.html">ahuNoHeatPeriods</a></th>
+<td>
+<p>Periods where fan is running and ahu heating command is off or valve open less than match</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuNoHeatPeriods_inter.html">ahuNoHeatPeriods_inter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuOccNotRun.html">ahuOccNotRun</a></th>
+<td>
+<p>Fan not running in Occupied period</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuOffPeriods.html">ahuOffPeriods</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuPointCheck.html">ahuPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuPointPressRstCom.html">ahuPointPressRstCom</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuPressSensorFail.html">ahuPressSensorFail</a></th>
+<td>
+<p>Supply Air Duct Static Pressure sensor reading values when AHU Fan is OFF</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuRogueRun.html">ahuRogueRun</a></th>
+<td>
+<p>AHU running without associated VAV Boxes Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuRunPeriods.html">ahuRunPeriods</a></th>
+<td>
+<p>Computes periods where the <code>discharge</code> <code>fan</code> <code>run</code> <code>sensor</code> of an ahu is on</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuRunPeriods_inter.html">ahuRunPeriods_inter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuRunRogue.html">ahuRunRogue</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuTotalFlow.html">ahuTotalFlow</a></th>
+<td>
+<p>given an <code>ahu</code> record computes the total discharge flow by adding the discharge flow of all VAVs served by the AHU</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuUnOccRun.html">ahuUnOccRun</a></th>
+<td>
+<p>Fan is running in Unoccupied periods when no Mode is calling for</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahuUnOccupiedRun.html">ahuUnOccupiedRun</a></th>
+<td>
+<p>gives periods where ahu <code>occupied</code> <code>enable</code> is not enable and <code>run</code> <code>sensor</code> is ON</p>
+</td>
+</tr>
+<tr>
+<th><a href="ahudischargecheck.html">ahudischargecheck</a></th>
+<td>
+<p>AHU overcooling periods for VAV</p>
+</td>
+</tr>
+<tr>
+<th><a href="airChangeCalc.html">airChangeCalc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="airFlwSenOutOfRange.html">airFlwSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="airFlwSpOutOfRange.html">airFlwSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="airPresSenOutOfRange.html">airPresSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="airPresSpOutOfRange.html">airPresSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="allMeter.html">allMeter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="analogDamperMismatchDischarge.html">analogDamperMismatchDischarge</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="analogDamperMismatchExhaust.html">analogDamperMismatchExhaust</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="analogDamperMismatchOutside.html">analogDamperMismatchOutside</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="analogDamperMismatchReturn.html">analogDamperMismatchReturn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="analysisApp.html">analysisApp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="analyticsQC.html">analyticsQC</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyBoilerOnInSystem.html">anyBoilerOnInSystem</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyChillerOnInSystem.html">anyChillerOnInSystem</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyChillerboilerOnSys.html">anyChillerboilerOnSys</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyChilleron.html">anyChilleron</a></th>
+<td>
+<p>This function gets the run status of chiller or pump if chiller is not available for the system</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyCoolingTowerOnInSystem.html">anyCoolingTowerOnInSystem</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyEquipOnInSystem.html">anyEquipOnInSystem</a></th>
+<td>
+<p>given a chillerPlant/boilerPlant returns periods where any equipment with equipRef of the system(chillers/boilers) is ON</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyboileron.html">anyboileron</a></th>
+<td>
+<p>This function get the run status of boiler or pump if boiler is not available from the system</p>
+</td>
+</tr>
+<tr>
+<th><a href="anyequipRefoff.html">anyequipRefoff</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="aoSignalOverriden.html">aoSignalOverriden</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="aocAllPoints.html">aocAllPoints</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="aocAllPoints2.html">aocAllPoints2</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="assetMaxRules.html">assetMaxRules</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="assetvspoint.html">assetvspoint</a></th>
+<td>
+<p>Run this function to get an email with list of assets and points associated with this</p>
+</td>
+</tr>
+<tr>
+<th><a href="autorulelist.html">autorulelist</a></th>
+<td>
+<p>List the rules which are set in Auto for Service case generation</p>
+</td>
+</tr>
+<tr>
+<th><a href="autosamquery.html">autosamquery</a></th>
+<td>
+<p>Run this Query to know the count of rules which are generating auto SAM cases</p>
+</td>
+</tr>
+<tr>
+<th><a href="autotag.html">autotag</a></th>
+<td>
+<p>Adds tags on rules which are in Auto for Service case generation</p>
+</td>
+</tr>
+<tr>
+<th><a href="basicSetup.html">basicSetup</a></th>
+<td>
+<p>Add the required jobs,ProjMeta and NavMeta</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerEquipTagging.html">boilerEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerLockoutIneffective.html">boilerLockoutIneffective</a></th>
+<td>
+<p>Boiler/Hot water system running when OA Temperature is High</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerLowTemp_inter.html">boilerLowTemp_inter</a></th>
+<td>
+<p>hot water temperature is within setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerManualRun.html">boilerManualRun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerNotRunwithDem.html">boilerNotRunwithDem</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerPointCheck.html">boilerPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerRogueRun.html">boilerRogueRun</a></th>
+<td>
+<p>Boiler running when none of the associated AHUs are in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerRunningwithoutDemand.html">boilerRunningwithoutDemand</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="boilerequipManualRun.html">boilerequipManualRun</a></th>
+<td>
+<p>Boiler Status is ON without Boiler enable from BMS</p>
+</td>
+</tr>
+<tr>
+<th><a href="btuPointCheck.html">btuPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="bulkjobadd.html">bulkjobadd</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="bypassVlvCmdFbk.html">bypassVlvCmdFbk</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="bypassvlvOveruse.html">bypassvlvOveruse</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cTLowEffectiveness.html">cTLowEffectiveness</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="casecount.html">casecount</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="casecount2.html">casecount2</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cdTempColdNoCooling.html">cdTempColdNoCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cdTempColdWhenCooling.html">cdTempColdWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cdTempHotFullCooling.html">cdTempHotFullCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cdTempHotNoCooling.html">cdTempHotNoCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cdTempHotWhenCooling.html">cdTempHotWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cdwTempSpOutOfRange.html">cdwTempSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chWaterTempSenOutOfRange.html">chWaterTempSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="changeParams.html">changeParams</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillHighFlo.html">chillHighFlo</a></th>
+<td>
+<p>Chilled Water Flow through Chiller is higher than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillLowFlo.html">chillLowFlo</a></th>
+<td>
+<p>Chilled Water Flow through Chiller is lower than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chilledWaterDeltaTLow.html">chilledWaterDeltaTLow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chilledWaterTempReset.html">chilledWaterTempReset</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chilledwaterWarm.html">chilledwaterWarm</a></th>
+<td>
+<p>Entering Chilled water temperature is higher than threshold in AHU</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerEquipTagging.html">chillerEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerHighTemp.html">chillerHighTemp</a></th>
+<td>
+<p>The Chilled Water Supply Temperature is higher than the Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerLockoutIneffective.html">chillerLockoutIneffective</a></th>
+<td>
+<p>Chiller/Chilled Water System working when OA Temperature is lower than CHW System enable Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerLowTemp.html">chillerLowTemp</a></th>
+<td>
+<p>The Chilled Water Supply Temperature is lower than the Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerManualRun.html">chillerManualRun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerNotRunwithDem.html">chillerNotRunwithDem</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerPointCheck.html">chillerPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerRogueRun.html">chillerRogueRun</a></th>
+<td>
+<p>Chiller Plant running without any of the associated AHUs being in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerRunHours.html">chillerRunHours</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerRunNoDmd.html">chillerRunNoDmd</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillerequipShortCycling.html">chillerequipShortCycling</a></th>
+<td>
+<p>Chiller Running for very short period of time</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillersystemHighTemp.html">chillersystemHighTemp</a></th>
+<td>
+<p>The Chilled Water Supply Temperature is higher than the Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chillersystemLowTemp.html">chillersystemLowTemp</a></th>
+<td>
+<p>The Chilled Water Supply Temperature is lower than the Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="chwTempSpOutOfRange.html">chwTempSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="chwpointOutOfLimit.html">chwpointOutOfLimit</a></th>
+<td>
+<p>Chilled Water Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="chwsPointCheck.html">chwsPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="clgCoilDmpFaceBypassLeak.html">clgCoilDmpFaceBypassLeak</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="co2Aoc.html">co2Aoc</a></th>
+<td>
+<p>Run this function to check Co2 Mapping</p>
+</td>
+</tr>
+<tr>
+<th><a href="co2SensorOutOfLomit.html">co2SensorOutOfLomit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coHighSp_fanOn.html">coHighSp_fanOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coHighSp_fanoff.html">coHighSp_fanoff</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coSensorOutOfLimit.html">coSensorOutOfLimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="comfortAoc.html">comfortAoc</a></th>
+<td>
+<p>Run this function to see the result of Comfort Mapping for all sites</p>
+</td>
+</tr>
+<tr>
+<th><a href="comfortAssetTagging.html">comfortAssetTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="comfortDashboardCheck.html">comfortDashboardCheck</a></th>
+<td>
+<p>Running this query in folio will help to identify tags and points missing for Comfort Dashboard</p>
+</td>
+</tr>
+<tr>
+<th><a href="comfortHourlyAoc.html">comfortHourlyAoc</a></th>
+<td>
+<p>Example:comfortHourlyAoc(dateTime(2017-03-03,00:00,"Sydney")..dateTime(2017-03-03,01:00,"Sydney")) Run this function to show the comfort hourly per zone for all sites in the project</p>
+</td>
+</tr>
+<tr>
+<th><a href="compareSetpoints.html">compareSetpoints</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="comparepoints.html">comparepoints</a></th>
+<td>
+<p>compares point1 and point2  returns greater if point1 is greater than point2 by threshold else lesser and equal if they are equal</p>
+</td>
+</tr>
+<tr>
+<th><a href="condTempSenOutOfRange.html">condTempSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="condensateAlarm.html">condensateAlarm</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="constantMaintenanceMode.html">constantMaintenanceMode</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="controllerOffline.html">controllerOffline</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolOnlyTaggingVav.html">coolOnlyTaggingVav</a></th>
+<td>
+<p>Adds a <code>coolOnly</code> tag to VAVs without reheat.Run vavReheatTagging before running this function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolValveCmdandFeedBackMismatch.html">coolValveCmdandFeedBackMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolValveInManual.html">coolValveInManual</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolValveManual.html">coolValveManual</a></th>
+<td>
+<p>Cooling valve Open without Supply Fan running</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolValvePassing.html">coolValvePassing</a></th>
+<td>
+<p>Discharge Air Temperature is lower than Outside/Mixed Air Temperature when Cooling valve is not commanded Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingInefficiency.html">coolingInefficiency</a></th>
+<td>
+<p>Discharge Air Temperature is higher than Setpoint in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingToweHighApproach_ct.html">coolingToweHighApproach_ct</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingTowerOFFwithFlow.html">coolingTowerOFFwithFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingTowerOnwithoutFlow.html">coolingTowerOnwithoutFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingTowerOprangeLow.html">coolingTowerOprangeLow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingTowerPointCheck.html">coolingTowerPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingTowerVsdFbkMismatch.html">coolingTowerVsdFbkMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="coolingvalveMismatch.html">coolingvalveMismatch</a></th>
+<td>
+<p>Mismatch in cooling valve command and feedback</p>
+</td>
+</tr>
+<tr>
+<th><a href="coopointOutOfLimit.html">coopointOutOfLimit</a></th>
+<td>
+<p>CO2 Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="copointOutOfLimit.html">copointOutOfLimit</a></th>
+<td>
+<p>CO Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="costCalc.html">costCalc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="costCalcMisc.html">costCalcMisc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cost_load_select.html">cost_load_select</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cracCapacityShifting.html">cracCapacityShifting</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cracdoorOpentooLong.html">cracdoorOpentooLong</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="csvFindAll.html">csvFindAll</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ctEquipTagging.html">ctEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ctequipShortCycling.html">ctequipShortCycling</a></th>
+<td>
+<p>Cooling Tower running for very short period of time</p>
+</td>
+</tr>
+<tr>
+<th><a href="currentavgcheck.html">currentavgcheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="currentimbalance.html">currentimbalance</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="customApp.html">customApp</a></th>
+<td>
+<p>A Custom App in analytics has been created that can be used to analyze rules/sparks details in a site</p>
+</td>
+</tr>
+<tr>
+<th><a href="customerType.html">customerType</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="customerTypeMBD.html">customerTypeMBD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="cwpointOutOfLimit.html">cwpointOutOfLimit</a></th>
+<td>
+<p>Condenser Water Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="daPressureHigherThanSPHighSpeed.html">daPressureHigherThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="daPressureHigherThanSPLowSpeed.html">daPressureHigherThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="daPressureLessThanSPHighSpeed.html">daPressureLessThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="daPressureLessThanSPLowSpeed.html">daPressureLessThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="daTempSenOutOfRange.html">daTempSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="daTempSpOutOfRange.html">daTempSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dapointOutOfLimit.html">dapointOutOfLimit</a></th>
+<td>
+<p>Discharge Air Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="dataDrop.html">dataDrop</a></th>
+<td>
+<p>Data Drop from Sentience</p>
+</td>
+</tr>
+<tr>
+<th><a href="dataLoss.html">dataLoss</a></th>
+<td></td>
+</tr>
+<tr>
+<th><a href="dataLossList.html">dataLossList</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dataLossSend.html">dataLossSend</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dehumTaggingAhu.html">dehumTaggingAhu</a></th>
+<td>
+<p>Adds a deHum tag to AHUs with a humidity setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="diffPressSensMalfunc.html">diffPressSensMalfunc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="diffPressureSensorIssue.html">diffPressureSensorIssue</a></th>
+<td>
+<p>Water Differential Pressure sensor reading value when Pump is OFF</p>
+</td>
+</tr>
+<tr>
+<th><a href="diffPressureSensorMalfunction.html">diffPressureSensorMalfunction</a></th>
+<td>
+<p>Water Differential Pressure sensor is not reading value when Pump is ON</p>
+</td>
+</tr>
+<tr>
+<th><a href="directZoneTaggingAhu.html">directZoneTaggingAhu</a></th>
+<td>
+<p>Tags an air handler as directZone based on following if there are - 1 zone temp and 1 zone setpoint - 1 zone temp and 2 zone setpoints - if no zone temp is present and 1 return temp and 1 setpoint - if no zone temp is present and 1 return temp and 2 setpoints -- heating and cooling setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeColdWhenFullHeating.html">dischargeColdWhenFullHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeColdWhenHeating.html">dischargeColdWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeColdWhenNoHeating.html">dischargeColdWhenNoHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeColdwhenCooling.html">dischargeColdwhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeFanCmdFbk.html">dischargeFanCmdFbk</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeFanFailedToStart.html">dischargeFanFailedToStart</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeFanFailedToStop.html">dischargeFanFailedToStop</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeFanHighStatic.html">dischargeFanHighStatic</a></th>
+<td>
+<p>Discharge Air Duct Static Pressure is higher than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeFanLowStatic.html">dischargeFanLowStatic</a></th>
+<td>
+<p>Discharge Air Duct Static Pressure is lower than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeFanStatic_inter.html">dischargeFanStatic_inter</a></th>
+<td>
+<p>AHU periods not maintaining Static pressure</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeHotFullCooling.html">dischargeHotFullCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeHotNoCooling.html">dischargeHotNoCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeHotWhenCooling.html">dischargeHotWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeHotwhenHeating.html">dischargeHotwhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="dischargeStatusVSDmismatch.html">dischargeStatusVSDmismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="duplicateAssetPoint.html">duplicateAssetPoint</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="duplicateSysKey.html">duplicateSysKey</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eTypeRefAdd.html">eTypeRefAdd</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eaFanOffWhenHighTemp.html">eaFanOffWhenHighTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eaFanOnWhenLowTemp.html">eaFanOnWhenLowTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eaPressureHigherThanSPHighSpeed.html">eaPressureHigherThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eaPressureHigherThanSPLowSpeed.html">eaPressureHigherThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eaPressureLessThanSPHighSpeed.html">eaPressureLessThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eaPressureLessThanSPLowSpeed.html">eaPressureLessThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="economyCycleNotUsed.html">economyCycleNotUsed</a></th>
+<td>
+<p>Economizer Mode OFF when Outside Air conditions are suitable</p>
+</td>
+</tr>
+<tr>
+<th><a href="economyCycleUnsuitableUse.html">economyCycleUnsuitableUse</a></th>
+<td>
+<p>Economizer Mode ON when Outside Air conditions are not suitable</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyDashboardCheck.html">energyDashboardCheck</a></th>
+<td>
+<p>Running this query in folio will help to identify tags and points missing for Energy Dashboard</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyDataExport.html">energyDataExport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyPointNA.html">energyPointNA</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyReadingZero.html">energyReadingZero</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="energySpike.html">energySpike</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="energySpikeDetection.html">energySpikeDetection</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyWheelcmdfbkmismatch.html">energyWheelcmdfbkmismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyavgvalwrite.html">energyavgvalwrite</a></th>
+<td>
+<p>Run this function as a job to add weekday average and weekend average consumption tag for any time period</p>
+</td>
+</tr>
+<tr>
+<th><a href="energyprofdeviation.html">energyprofdeviation</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="enthalpyWheelNotRunning.html">enthalpyWheelNotRunning</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="enthalpywheelImproperRun.html">enthalpywheelImproperRun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="enumMetaMigration3.html">enumMetaMigration3</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoAllPoints.html">eoAllPoints</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoApp.html">eoApp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoFullConfig.html">eoFullConfig</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoGroupNoDL.html">eoGroupNoDL</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoGroupNoNA.html">eoGroupNoNA</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoJobs.html">eoJobs</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoMeterPoints.html">eoMeterPoints</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoOnEachDay1.html">eoOnEachDay1</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoPlantPointCheck.html">eoPlantPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoPoPointreport.html">eoPoPointreport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoPoReport.html">eoPoReport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoRogue.html">eoRogue</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoSetpointVariable.html">eoSetpointVariable</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoSpIteration.html">eoSpIteration</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoStateVariable.html">eoStateVariable</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoStop.html">eoStop</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoTag.html">eoTag</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoWeatherVariable.html">eoWeatherVariable</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoZones.html">eoZones</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="eoZonesPlantDemand.html">eoZonesPlantDemand</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipCaseCount.html">equipCaseCount</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipFailtoStart.html">equipFailtoStart</a></th>
+<td>
+<p>There is a mismatch between Equip run status and run command</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipFailtoStop.html">equipFailtoStop</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipGrouping.html">equipGrouping</a></th>
+<td>
+<p>Groups equipment and adds an eTypeRef tag based on the type of equipment</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipManualRun.html">equipManualRun</a></th>
+<td>
+<p>Chiller Status is ON without Chiller enable from BMS</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipNotused.html">equipNotused</a></th>
+<td>
+<p>Run this query in folio to find the list of equipment where no rules have been applied</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipRuleReport.html">equipRuleReport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipShortCycling.html">equipShortCycling</a></th>
+<td>
+<p>Boiler Running for very short period of time</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipTagging.html">equipTagging</a></th>
+<td>
+<p>Run this function in folio to add tags to the equipment</p>
+</td>
+</tr>
+<tr>
+<th><a href="equipmentOffline.html">equipmentOffline</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="excessMeterConsumption.html">excessMeterConsumption</a></th>
+<td>
+<p>Identify if the average energy consumption of a specific day(weekday/weekend) is greater than the last month's average energy consumption (weekday/weekend) by the deviation specified</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustFanCmdFbk.html">exhaustFanCmdFbk</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustFanNotRunninginOcc.html">exhaustFanNotRunninginOcc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustFanRunningInUnoccupied.html">exhaustFanRunningInUnoccupied</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustStatusVSDmismatch.html">exhaustStatusVSDmismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustTempsenOutOfRange.html">exhaustTempsenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustfanHighStatic.html">exhaustfanHighStatic</a></th>
+<td>
+<p>Exhaust Air Fan static pressure is higher than setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustfanManualRun.html">exhaustfanManualRun</a></th>
+<td>
+<p>Exhaust Fan running without Supply Fan being ON</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustfanfailtostart.html">exhaustfanfailtostart</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhaustfanfailtostop.html">exhaustfanfailtostop</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="exhausttemppointoutoflimit.html">exhausttemppointoutoflimit</a></th>
+<td>
+<p>Exhaust Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="extendedNonOccRun.html">extendedNonOccRun</a></th>
+<td>
+<p>Equipment running for 3 hours or more in any mode other than Occupancy</p>
+</td>
+</tr>
+<tr>
+<th><a href="extendedNonOccurun.html">extendedNonOccurun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="extractRule.html">extractRule</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="extractRuleList.html">extractRuleList</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="extractRuleListOld.html">extractRuleListOld</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="failedToStart_boiler.html">failedToStart_boiler</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="failedToStart_ct.html">failedToStart_ct</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="failedToStart_pmp.html">failedToStart_pmp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="failedToStop_ct.html">failedToStop_ct</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="failedToStop_pmp.html">failedToStop_pmp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="failtostart_chiller.html">failtostart_chiller</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanEquipTagging.html">fanEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanNotRunninginOcc.html">fanNotRunninginOcc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanPointCheck.html">fanPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanSpeedHigh.html">fanSpeedHigh</a></th>
+<td>
+<p>Fan Speed is 100% for more than 6 hours</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanfullspeed.html">fanfullspeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanoff.html">fanoff</a></th>
+<td>
+<p>Supply Fan turned OFF-Rule to be used for units running 24/7</p>
+</td>
+</tr>
+<tr>
+<th><a href="fanrunningInUnoccupiedPeriod.html">fanrunningInUnoccupiedPeriod</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="faultDataExport.html">faultDataExport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="fcuPointCheck.html">fcuPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="filterDirty.html">filterDirty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="findingNAEmail.html">findingNAEmail</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="findingna.html">findingna</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="floorRefAdd.html">floorRefAdd</a></th>
+<td>
+<p>changes the floorRef of a point to the floorRef of the equipRef of the point</p>
+</td>
+</tr>
+<tr>
+<th><a href="flowSensFail.html">flowSensFail</a></th>
+<td>
+<p>Flow Sensor reading same value for long duration</p>
+</td>
+</tr>
+<tr>
+<th><a href="flowpointOutOfLimit.html">flowpointOutOfLimit</a></th>
+<td>
+<p>Flow Sensor reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="flowpointflatline.html">flowpointflatline</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="folioextractemail.html">folioextractemail</a></th>
+<td>
+<p>This function will email folio extract of equip and point for project</p>
+</td>
+</tr>
+<tr>
+<th><a href="funcBackup.html">funcBackup</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="funcRestore.html">funcRestore</a></th>
+<td>
+<p>Reads the <a href="https://analytics12.honeywellcloud.com/ui/restoreFunc.trio">restoreFunc.trio</a> file from io directory and commits to database</p>
+</td>
+</tr>
+<tr>
+<th><a href="funcsTrioCreate.html">funcsTrioCreate</a></th>
+<td>
+<p>Emails out a trio of all funcs that have a particular tag</p>
+</td>
+</tr>
+<tr>
+<th><a href="gasCalcSiteMeter.html">gasCalcSiteMeter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="gasPointIssues.html">gasPointIssues</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="gasProfileDeviations.html">gasProfileDeviations</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbAchCalc.html">hbAchCalc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbAchFlowSPoutoflimit.html">hbAchFlowSPoutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbAchFlowSensorFaulty.html">hbAchFlowSensorFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbAchFlowSensoroutoflimit.html">hbAchFlowSensoroutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbCo2SPoutoflimit.html">hbCo2SPoutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbCo2SensorFaulty.html">hbCo2SensorFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbCo2Sensoroutoflimit.html">hbCo2Sensoroutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbDaPressureLessThanSPHighSpeed.html">hbDaPressureLessThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbDaPressureLessThanSPLowSpeed.html">hbDaPressureLessThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbDaPressureSPFaulty.html">hbDaPressureSPFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbDaPressureSensorFaulty.html">hbDaPressureSensorFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbFlowLowAhuFanHighSpeed.html">hbFlowLowAhuFanHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbFlowLowAhuFanLowSpeed.html">hbFlowLowAhuFanLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbFlowLowVav.html">hbFlowLowVav</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumidityHighWithDeHum.html">hbHumidityHighWithDeHum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumidityHighWithNoDeHum.html">hbHumidityHighWithNoDeHum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumidityLowWithHumidifier.html">hbHumidityLowWithHumidifier</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumidityLowWithNoHum.html">hbHumidityLowWithNoHum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumiditySPoutoflimit.html">hbHumiditySPoutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumiditySensorFaulty.html">hbHumiditySensorFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbHumiditySensoroutoflimit.html">hbHumiditySensoroutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbOutsideAirFlwSpOutOfRange.html">hbOutsideAirFlwSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbPm25SensorFaulty.html">hbPm25SensorFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbPm25Sensoroutoflimit.html">hbPm25Sensoroutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbTempSPoutoflimit.html">hbTempSPoutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbTempSensoroutoflimit.html">hbTempSensoroutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbTvocSensorFaulty.html">hbTvocSensorFaulty</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbTvocSensoroutoflimit.html">hbTvocSensoroutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbZoneHighCo2OADClose.html">hbZoneHighCo2OADClose</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hbZoneHighCo2OADOpen.html">hbZoneHighCo2OADOpen</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hdTempColdFullHeating.html">hdTempColdFullHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hdTempColdNoHeating.html">hdTempColdNoHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hdTempColdWhenHeating.html">hdTempColdWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hdTempHotNoHeating.html">hdTempHotNoHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hdTempHotWhenHeating.html">hdTempHotWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heaTWheelLowDeltaT.html">heaTWheelLowDeltaT</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatMap_RH_All.html">heatMap_RH_All</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatMap_RH_Equipwise.html">heatMap_RH_Equipwise</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatMap_Temp_All.html">heatMap_Temp_All</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatMap_Temp_Equipwise.html">heatMap_Temp_Equipwise</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatMap_co2_All.html">heatMap_co2_All</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatMap_co2_Equipwise.html">heatMap_co2_Equipwise</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatPumpClgInefficiency.html">heatPumpClgInefficiency</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatPumpHtgInefficiency.html">heatPumpHtgInefficiency</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatValveCmdandFeedBackMismatch.html">heatValveCmdandFeedBackMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatValveManual.html">heatValveManual</a></th>
+<td>
+<p>Heating valve Open without Supply Fan running</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatWheelcmdfbkmismatch.html">heatWheelcmdfbkmismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatingCheck.html">heatingCheck</a></th>
+<td>
+<p>This function checks if there is enough difference in temperatures before and after the heating coil The output is true when there is an expected fault in heating</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatingInefficiency.html">heatingInefficiency</a></th>
+<td>
+<p>Discharge Air Temperature is lower than Setpoint in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="heatvalveInManual.html">heatvalveInManual</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexPointCheck.html">hexPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexPriValveMismatch.html">hexPriValveMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexPrimeValveOpenDeltaT_low.html">hexPrimeValveOpenDeltaT_low</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexRogueRun.html">hexRogueRun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexSecValveMismatch.html">hexSecValveMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexSecondValveOpenDeltaT_low.html">hexSecondValveOpenDeltaT_low</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexSecondaryVlvCloseHiDmd.html">hexSecondaryVlvCloseHiDmd</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexSecondaryVlvOpenNoDmd.html">hexSecondaryVlvOpenNoDmd</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexSecondaryVlvPassing.html">hexSecondaryVlvPassing</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hexSecondaryVlvStuck.html">hexSecondaryVlvStuck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highBoilerSupplyTemp.html">highBoilerSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highCHWSupplyTemp.html">highCHWSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highCO2.html">highCO2</a></th>
+<td>
+<p>Zone/Return CO2 higher than Setpoint and OA Damper is not Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="highChilledWaterTemp_Hex.html">highChilledWaterTemp_Hex</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highChillerSupplyTemp.html">highChillerSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highCondenserFlow.html">highCondenserFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highCwSupplyTemp.html">highCwSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highEntryChilledWaterTemp.html">highEntryChilledWaterTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highHWSsupplytemp.html">highHWSsupplytemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highHumidity.html">highHumidity</a></th>
+<td>
+<p>Return Air/Zone RH is higher than Setpoint with Dehumidification ON</p>
+</td>
+</tr>
+<tr>
+<th><a href="highWaterDiffPress.html">highWaterDiffPress</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="highWaterDiffPressure.html">highWaterDiffPressure</a></th>
+<td>
+<p>Water System Differential Pressure is higher than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="hisMinMaxVal.html">hisMinMaxVal</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="historyImport.html">historyImport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hotRefreshChange.html">hotRefreshChange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hotRefreshChangeMDB.html">hotRefreshChangeMDB</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hotWaterDeltaTLow.html">hotWaterDeltaTLow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hotWaterHeatTaggingAhu.html">hotWaterHeatTaggingAhu</a></th>
+<td>
+<p>Adds a <code>hotWaterReheat</code> tag to the ahu if <code>heat</code> <code>cmd</code> <code>valve</code> point is present in the ahu</p>
+</td>
+</tr>
+<tr>
+<th><a href="hotWaterTempSenOutOfRange.html">hotWaterTempSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hotWaterValvePassing.html">hotWaterValvePassing</a></th>
+<td>
+<p>Discharge Air  Temperature is higher than Outside/Mixed  Temperature when Heating valve is not commanded Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="htOnInEconoMode.html">htOnInEconoMode</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="humidifermanual.html">humidifermanual</a></th>
+<td>
+<p>This rule checks if the humidifer is ON when the AHU is OFF</p>
+</td>
+</tr>
+<tr>
+<th><a href="humidityAoc.html">humidityAoc</a></th>
+<td>
+<p>Run this function to check Humidity Mapping</p>
+</td>
+</tr>
+<tr>
+<th><a href="humidityHighWithDeHum.html">humidityHighWithDeHum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="humidityHighWithNoDeHum.html">humidityHighWithNoDeHum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="humidityLowWithHumidifier.html">humidityLowWithHumidifier</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="humidityLowWithNoHum.html">humidityLowWithNoHum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hwTempSpOutOfRange.html">hwTempSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="hwpointOutOfLimit.html">hwpointOutOfLimit</a></th>
+<td>
+<p>Hot Water Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="hwsPointCheck.html">hwsPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="iKWperTR.html">iKWperTR</a></th>
+<td>
+<p>Chiller IKW/TR is not optimum</p>
+</td>
+</tr>
+<tr>
+<th><a href="iaqPointCheck.html">iaqPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="impactedVAVCnt.html">impactedVAVCnt</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="impactedVAVName.html">impactedVAVName</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="impactedVAVscom.html">impactedVAVscom</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="improperBoilerLockout.html">improperBoilerLockout</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="improperChillerLockout.html">improperChillerLockout</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="improperEconOFF.html">improperEconOFF</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="improperEconON.html">improperEconON</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="improperISOValve.html">improperISOValve</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="improperbypassValve.html">improperbypassValve</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="intermitDL.html">intermitDL</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="intermittentDataLoss.html">intermittentDataLoss</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="intermittentNA.html">intermittentNA</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="isoValveMismatch.html">isoValveMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="jobEmailChange.html">jobEmailChange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="jobEmailChangeMDB.html">jobEmailChangeMDB</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="jobfailurealert.html">jobfailurealert</a></th>
+<td>
+<p>This function when run as Job will trigger an email to the user tagged as ea whenever any of the job fails at site</p>
+</td>
+</tr>
+<tr>
+<th><a href="kpiSparkCost.html">kpiSparkCost</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="kpiSparkCount.html">kpiSparkCount</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="kpiTotalEnergy.html">kpiTotalEnergy</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="kwhCalcSiteMeter.html">kwhCalcSiteMeter</a></th>
+<td>
+<p>Add this function as the value of the <code>hisFunc</code> tag of a virtual meter in skyspark and it creates a summation of the consumption of all the submeters of this meter</p>
+</td>
+</tr>
+<tr>
+<th><a href="lightEquipTagging.html">lightEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lightFailedtoStart.html">lightFailedtoStart</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lightFailedtoStop.html">lightFailedtoStop</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lightsOnAndUnoccupied.html">lightsOnAndUnoccupied</a></th>
+<td>
+<p>Lights are ON during Unoccupied hours</p>
+</td>
+</tr>
+<tr>
+<th><a href="lightsOnAndUnoccupied_new.html">lightsOnAndUnoccupied_new</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowBoilerSupplyTemp.html">lowBoilerSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowCHWSupplyTemp.html">lowCHWSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowChilledWaterTemp_Hex.html">lowChilledWaterTemp_Hex</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowChillerSupplyTemp.html">lowChillerSupplyTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowCwFlow.html">lowCwFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowDiffWaterPressure.html">lowDiffWaterPressure</a></th>
+<td>
+<p>Water System Differential Pressure is lower than Setpoint when Pump is running</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowEnteringHotWaterTemp.html">lowEnteringHotWaterTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowHWSsupplytemp.html">lowHWSsupplytemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowHumidity.html">lowHumidity</a></th>
+<td>
+<p>Return Air/Zone RH is lower than Setpoint with Humidification ON</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowPreheatTemp.html">lowPreheatTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowWaterDiffPressure.html">lowWaterDiffPressure</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowdeltaTCTowerOn.html">lowdeltaTCTowerOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowdeltaTboilerOn.html">lowdeltaTboilerOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="lowdeltaTchillerOn.html">lowdeltaTchillerOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="maxMinValTagging.html">maxMinValTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="mdbFunc.html">mdbFunc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="meterPeakDemand.html">meterPeakDemand</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="meterPointCheck.html">meterPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="meterWise.html">meterWise</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="minMaxSP.html">minMaxSP</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="minMaxSpTrend.html">minMaxSpTrend</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="minMaxValAdd.html">minMaxValAdd</a></th>
+<td>
+<p>Used to add minVal and maxVal tags to points for pointoutoflimit functions and for ppmTaskReport</p>
+</td>
+</tr>
+<tr>
+<th><a href="minmaxZone.html">minmaxZone</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="missingRulesCheck.html">missingRulesCheck</a></th>
+<td>
+<p>Run this func in folio to get the list of rules missing as per package</p>
+</td>
+</tr>
+<tr>
+<th><a href="mixedTempSensOutofRange.html">mixedTempSensOutofRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="mixedtemppointoutoflimit.html">mixedtemppointoutoflimit</a></th>
+<td>
+<p>MIxed Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="multiZoneTaggingAhu.html">multiZoneTaggingAhu</a></th>
+<td>
+<p>tags an ahu as multiZone if there are -more than 1 zone temps and more than 1 zone setpoints -more than 1 zone temps and 1 zone setpoint -more than 1 zone temps and 2 setpoints -- the setpoints are heating and cooling setpoints</p>
+</td>
+</tr>
+<tr>
+<th><a href="noteExport.html">noteExport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="oadFlowHigherThansp.html">oadFlowHigherThansp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="oadFlowLesserThansp.html">oadFlowLesserThansp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="occupancyandMaintenance.html">occupancyandMaintenance</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="offCoilNotGreaterthanOnCoilHeating.html">offCoilNotGreaterthanOnCoilHeating</a></th>
+<td>
+<p>OFF Heating Coil Temperature not higher by threshold value than the ON Heating Coil Temperature when Heating valve is Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="offCoilnotLessthanOnCoilCooling.html">offCoilnotLessthanOnCoilCooling</a></th>
+<td>
+<p>OFF Cooling Coil Temperature not lower by threshold value than the ON Cooling Coil Temperature when Cooling valve is Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="offcoilSenOutofRange.html">offcoilSenOutofRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="offcoilTemppointoutoflimit.html">offcoilTemppointoutoflimit</a></th>
+<td>
+<p>Off Coil Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="onCoiltemppointoutoflimit.html">onCoiltemppointoutoflimit</a></th>
+<td>
+<p>On Coil Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="oncoilsenOutofRange.html">oncoilsenOutofRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="outsideAirCheck.html">outsideAirCheck</a></th>
+<td>
+<p>OA Temperature sensor values on site does not match Weather Data values</p>
+</td>
+</tr>
+<tr>
+<th><a href="outsideAirTempCheck.html">outsideAirTempCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="overCooling.html">overCooling</a></th>
+<td>
+<p>Discharge Air Temperature is lower than Setpoint and AHU is in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="overHeating.html">overHeating</a></th>
+<td>
+<p>Discharge Air Temperature is higher than Setpoint and AHU is in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="paramSplitter1.html">paramSplitter1</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="parseSparkPriority.html">parseSparkPriority</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="parseSparkType.html">parseSparkType</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="parseWorkOrder.html">parseWorkOrder</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pdTaggingVav.html">pdTaggingVav</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="piRulesCheck.html">piRulesCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="plantEquipTagging.html">plantEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointHistoryApp.html">pointHistoryApp</a></th>
+<td>
+<p>Run this function to add Custom Point History Extract App</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointInAlarm.html">pointInAlarm</a></th>
+<td>
+<p>Periods when an Alarm point is in "Alarm"</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointMinMax.html">pointMinMax</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointMinMax1.html">pointMinMax1</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointNaFinder.html">pointNaFinder</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointOutOfLimit.html">pointOutOfLimit</a></th>
+<td>
+<p>Checks if the point is within the specified limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="pointdeviatingfromgroup.html">pointdeviatingfromgroup</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ppmReportGenerate.html">ppmReportGenerate</a></th>
+<td></td>
+</tr>
+<tr>
+<th><a href="preheatTempControlissue.html">preheatTempControlissue</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="prespointOutOfLimit.html">prespointOutOfLimit</a></th>
+<td>
+<p>Pressure sensor is reading out of limit values</p>
+</td>
+</tr>
+<tr>
+<th><a href="pressSensFail.html">pressSensFail</a></th>
+<td>
+<p>Supply Air Duct Static Pressure sensor reading Stagnant values when the AHU Fan is running</p>
+</td>
+</tr>
+<tr>
+<th><a href="pressuresensorIssuewithocc.html">pressuresensorIssuewithocc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pressuresensorbiaswithocc.html">pressuresensorbiaswithocc</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pumpEquipTagging.html">pumpEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pumpPointCheck.html">pumpPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pumpRogueRun.html">pumpRogueRun</a></th>
+<td>
+<p>Pump running for more duration than "Off-delay" time after the associated Boiler/Chiller is OFF</p>
+</td>
+</tr>
+<tr>
+<th><a href="pumpRoguerun.html">pumpRoguerun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="pumpvsdcmdMsmatch.html">pumpvsdcmdMsmatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="raPressureHigherThanSPHighSpeed.html">raPressureHigherThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="raPressureHigherThanSPLowSpeed.html">raPressureHigherThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="raPressureLessThanSPHighSpeed.html">raPressureLessThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="raPressureLessThanSPLowSpeed.html">raPressureLessThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="raTempSenOutOfRange.html">raTempSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="raTempSpOutOfRange.html">raTempSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="racRateofChange.html">racRateofChange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="rackTempGradient.html">rackTempGradient</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="radCoolPointCheck.html">radCoolPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="radHeatPointCheck.html">radHeatPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="readCsv.html">readCsv</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="reheatTaggingVav.html">reheatTaggingVav</a></th>
+<td>
+<p>changes the <code>heat</code> <code>cmd</code> tag from auto import on VAVs to <code>reheat</code> <code>cmd</code></p>
+</td>
+</tr>
+<tr>
+<th><a href="removeBlankCols.html">removeBlankCols</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="reportExport.html">reportExport</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnColdWhenCooling.html">returnColdWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnColdWhenFullHeating.html">returnColdWhenFullHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnColdWhenHeating.html">returnColdWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnColdWhenNoHeating.html">returnColdWhenNoHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnFanCmdFbk.html">returnFanCmdFbk</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnFanHighStatic.html">returnFanHighStatic</a></th>
+<td>
+<p>Return Air Duct Static Pressure is higher than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnFanLowStatic.html">returnFanLowStatic</a></th>
+<td>
+<p>Return Air Duct Static Pressure is lower than Setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnHotFullCooling.html">returnHotFullCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnHotNoCooling.html">returnHotNoCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnHotWhenCooling.html">returnHotWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnHotWhenHeating.html">returnHotWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnStatusVSDmismatch.html">returnStatusVSDmismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnfanfailtostart.html">returnfanfailtostart</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returnfanfailtostop.html">returnfanfailtostop</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="returntempointoutoflimit.html">returntempointoutoflimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="rhSenOutOfRange.html">rhSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="rhSpOutOfRange.html">rhSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="rhpointOutOfLimit.html">rhpointOutOfLimit</a></th>
+<td>
+<p>RH Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="rogueRun_boiler.html">rogueRun_boiler</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="rogueRun_chiller.html">rogueRun_chiller</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleFuncParamChange.html">ruleFuncParamChange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleLanguageChange.html">ruleLanguageChange</a></th>
+<td>
+<p>Run this function to change the rule languages dis and help content</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleTargetReport.html">ruleTargetReport</a></th>
+<td>
+<p>Run this query in folio to get the list of targets of all the rules and their status</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleTesterAll.html">ruleTesterAll</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleTesterApp.html">ruleTesterApp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleTesterSingle.html">ruleTesterSingle</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="ruleType.html">ruleType</a></th>
+<td>
+<p>Run this function to add tags to categorize the rules as standard or custom</p>
+</td>
+</tr>
+<tr>
+<th><a href="runHoursView.html">runHoursView</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensflat_Daterange.html">sensflat_Daterange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensibleWheelImproperRun.html">sensibleWheelImproperRun</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensibleWheelNotRunning.html">sensibleWheelNotRunning</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensorConstantVal.html">sensorConstantVal</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensorFailure.html">sensorFailure</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensorFlatline.html">sensorFlatline</a></th>
+<td>
+<p>Sensor is showing constant values for predetermined time</p>
+</td>
+</tr>
+<tr>
+<th><a href="sensorValueSpike.html">sensorValueSpike</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="serviceConsumption.html">serviceConsumption</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sfRfmismatch.html">sfRfmismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="shortCycle_boiler.html">shortCycle_boiler</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="shortCycle_chiller.html">shortCycle_chiller</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="shortCycling_ct.html">shortCycling_ct</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="signalOscillation.html">signalOscillation</a></th>
+<td>
+<p>Control Output signals Oscillating too much</p>
+</td>
+</tr>
+<tr>
+<th><a href="signalOscillationFreq.html">signalOscillationFreq</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="signalOscillationfan.html">signalOscillationfan</a></th>
+<td>
+<p>Fan VFD speed oscillating</p>
+</td>
+</tr>
+<tr>
+<th><a href="simHeatCool.html">simHeatCool</a></th>
+<td>
+<p>Simultaneous Heating and Cooling operation in AHU</p>
+</td>
+</tr>
+<tr>
+<th><a href="simHeatCoolVAV.html">simHeatCoolVAV</a></th>
+<td>
+<p>Simultaneous Heating and Cooling operation in VAV</p>
+</td>
+</tr>
+<tr>
+<th><a href="simHumDehum.html">simHumDehum</a></th>
+<td>
+<p>Identifies periods where AHU is operating humidifier and dehumidification simultaneously</p>
+</td>
+</tr>
+<tr>
+<th><a href="simHumdehum.html">simHumdehum</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="simultaneousHeatingandCooling.html">simultaneousHeatingandCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="singleZoneAhuCoolingInefficiency.html">singleZoneAhuCoolingInefficiency</a></th>
+<td>
+<p>RA/Zone Temperature is higher than Setpoint in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="singleZoneAhuHeatingInefficiency.html">singleZoneAhuHeatingInefficiency</a></th>
+<td>
+<p>RA/Zone Temperature is lower than Setpoint in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="singleZoneAhuOverCooling.html">singleZoneAhuOverCooling</a></th>
+<td>
+<p>Zone Temperature is lower than Setpoint and AHU is in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="singleZoneAhuOverHeating.html">singleZoneAhuOverHeating</a></th>
+<td>
+<p>Zone Temperature is higher than Setpoint and AHU is in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="snapshotPurge.html">snapshotPurge</a></th>
+<td>
+<p>deletes old snapshots</p>
+</td>
+</tr>
+<tr>
+<th><a href="spCompare.html">spCompare</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sparkAppNew.html">sparkAppNew</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="sppointOutOfLimit.html">sppointOutOfLimit</a></th>
+<td>
+<p>Zone Temperature Setpoint is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="stepTest1.html">stepTest1</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="stepTest2.html">stepTest2</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="stsCheck.html">stsCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="supplyExhaustFanMismatch.html">supplyExhaustFanMismatch</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="supplyWaterhighFlow.html">supplyWaterhighFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="supplyreturnFanRunMismatch.html">supplyreturnFanRunMismatch</a></th>
+<td>
+<p>Supply and Return Fan Run status mismatch of more than 5 minutes</p>
+</td>
+</tr>
+<tr>
+<th><a href="supplywaterLowFlow.html">supplywaterLowFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemBypassValveIssue.html">systemBypassValveIssue</a></th>
+<td>
+<p>System Differential Pressure is higher than Setpoint and Bypass valve is Closed</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemBypassValveOveruse.html">systemBypassValveOveruse</a></th>
+<td>
+<p>System Differential Pressure is lower than Setpoint and Bypass valve is Open</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemHighTemp.html">systemHighTemp</a></th>
+<td>
+<p>Hot Water Supply Temperature higher than Setpoint with at least One Boiler running</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemLowTemp.html">systemLowTemp</a></th>
+<td>
+<p>Hot Water Supply Temperature lower than Setpoint with at least One Boiler running</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemPumpOffPeriods.html">systemPumpOffPeriods</a></th>
+<td>
+<p>Given a <code>chillerPlant</code> or <code>boilerPlant</code> record, returns the periods where none of the pumps in the system were running</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemPumpOffPeriods_noCWP.html">systemPumpOffPeriods_noCWP</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemPumpOnPeriods.html">systemPumpOnPeriods</a></th>
+<td>
+<p>Given a <code>chillerPlant</code> or <code>boilerPlant</code> record, returns the periods where one or more pumps in the system were running</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemPumpOnPeriods_noCWP.html">systemPumpOnPeriods_noCWP</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="systemPumpOnSpeed.html">systemPumpOnSpeed</a></th>
+<td>
+<p>get pump running period less than thershold</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAHUofVAV.html">toAHUofVAV</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAHUsOfBoilerPlant.html">toAHUsOfBoilerPlant</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAHUsOfChillerPlant.html">toAHUsOfChillerPlant</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuCool.html">toAhuCool</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/cool.html">cool</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/cmd.html">cmd</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuDischargeFan.html">toAhuDischargeFan</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, query its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/discharge.html">discharge</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/fan.html">fan</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/cmd.html">cmd</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuDischargePressure.html">toAhuDischargePressure</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/discharge.html">discharge</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/pressure.html">pressure</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sensor.html">sensor</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuDischargePressureSp.html">toAhuDischargePressureSp</a></th>
+<td>
+<p>to be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuDischargeTemp.html">toAhuDischargeTemp</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/discharge.html">discharge</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/temp.html">temp</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sensor.html">sensor</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuDischargeTempSp.html">toAhuDischargeTempSp</a></th>
+<td>
+<p>to be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuHeat.html">toAhuHeat</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/heat.html">heat</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/cmd.html">cmd</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuMixedTemp.html">toAhuMixedTemp</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/mixed.html">mixed</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/temp.html">temp</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sensor.html">sensor</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuOutsideDamper.html">toAhuOutsideDamper</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/outside.html">outside</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/damper.html">damper</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/cmd.html">cmd</a></code> point</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuOutsideEnthalpy.html">toAhuOutsideEnthalpy</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuOutsideTemp.html">toAhuOutsideTemp</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/outside.html">outside</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/temp.html">temp</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sensor.html">sensor</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuReturnEnthalpy.html">toAhuReturnEnthalpy</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuReturnTemp.html">toAhuReturnTemp</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/return.html">return</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/temp.html">temp</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sensor.html">sensor</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuReturnTempSp.html">toAhuReturnTempSp</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/return.html">return</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/temp.html">temp</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sp.html">sp</a></code> point rec</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuSpeedCommand.html">toAhuSpeedCommand</a></th>
+<td></td>
+</tr>
+<tr>
+<th><a href="toAhuSpeedSensor.html">toAhuSpeedSensor</a></th>
+<td></td>
+</tr>
+<tr>
+<th><a href="toAhuTp.html">toAhuTp</a></th>
+<td>
+<p>function to pull occupancy data for comfort dashboard</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuZoneSetpoint.html">toAhuZoneSetpoint</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toAhuZoneTemp.html">toAhuZoneTemp</a></th>
+<td>
+<p>Given an <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/ahu.html">ahu</a></code> rec, get its <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/zone.html">zone</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phScience/temp.html">temp</a></code> <code><a href="https://analytics12.honeywellcloud.com/lib-phIoT/sensor.html">sensor</a></code> point rec or throw an exception</p>
+</td>
+</tr>
+<tr>
+<th><a href="toEquipRunCmd.html">toEquipRunCmd</a></th>
+<td>
+<p>returns the <code>run</code> <code>cmd</code> point of the equipment</p>
+</td>
+</tr>
+<tr>
+<th><a href="toEquipRunSensor.html">toEquipRunSensor</a></th>
+<td>
+<p>Given an <code>equip</code> record, will get the <code>run</code> <code>sensor</code> of the equipment</p>
+</td>
+</tr>
+<tr>
+<th><a href="toEquipWorkOrder.html">toEquipWorkOrder</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="toOutsideTemp.html">toOutsideTemp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="toSystemBypassValve.html">toSystemBypassValve</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="toSystemPressureSensor.html">toSystemPressureSensor</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toSystemPressureSetpoint.html">toSystemPressureSetpoint</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toVavDamper.html">toVavDamper</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toVavFlow.html">toVavFlow</a></th>
+<td>
+<p>To be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toVavFlowSp.html">toVavFlowSp</a></th>
+<td>
+<p>to be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="toVavReheat.html">toVavReheat</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="toahudehumidfier.html">toahudehumidfier</a></th>
+<td>
+<p>Function returns dehumidifier and (cmd or sensor) and run point</p>
+</td>
+</tr>
+<tr>
+<th><a href="togetMaintenance.html">togetMaintenance</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="togetOccupancy.html">togetOccupancy</a></th>
+<td>
+<p>This function returns Occupied periods</p>
+</td>
+</tr>
+<tr>
+<th><a href="togetreheatPeriods.html">togetreheatPeriods</a></th>
+<td>
+<p>This function return reheat period for VAV</p>
+</td>
+</tr>
+<tr>
+<th><a href="togetvav.html">togetvav</a></th>
+<td>
+<p>Function returns the AHU serving the VAV</p>
+</td>
+</tr>
+<tr>
+<th><a href="tomaintenancePoint.html">tomaintenancePoint</a></th>
+<td>
+<p>To get maintenance point</p>
+</td>
+</tr>
+<tr>
+<th><a href="updateParamHelp.html">updateParamHelp</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="variableVolumeTaggingAhu.html">variableVolumeTaggingAhu</a></th>
+<td>
+<p>Adds a <code>variableVolume</code> tag to AHUs with vfd speed control</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavAirLeakage.html">vavAirLeakage</a></th>
+<td>
+<p>Flow Sensor reading flow when Damper is fully closed and AHU is running, indicating air leakage through Damper</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavAirLeakage_withFreq.html">vavAirLeakage_withFreq</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavClosedDamperFlow.html">vavClosedDamperFlow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavCoolingInefficiency.html">vavCoolingInefficiency</a></th>
+<td>
+<p>Zone Temperature is higher than Setpoint in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavEquipTagging.html">vavEquipTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavFlowHigh.html">vavFlowHigh</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavFlowLow.html">vavFlowLow</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavFlowSensorBias.html">vavFlowSensorBias</a></th>
+<td>
+<p>Flow Sensor reading flow when Damper is fully closed and AHU is not running, indicating Flow Sensor bias</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavFlowSensorBias_withFreq.html">vavFlowSensorBias_withFreq</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavHeatingInefficiency.html">vavHeatingInefficiency</a></th>
+<td>
+<p>Zone Temperature is lower than Setpoint in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavNoReheatPeriods.html">vavNoReheatPeriods</a></th>
+<td>
+<p>Returns VAV Reheat Off periods</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavOverCooling.html">vavOverCooling</a></th>
+<td>
+<p>Zone Temperature is lower than Setpoint in Cooling mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavOverHeating.html">vavOverHeating</a></th>
+<td>
+<p>Zone Temperature is higher than Setpoint in Heating mode</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavPointCheck.html">vavPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavReheatIssue.html">vavReheatIssue</a></th>
+<td>
+<p>Temperature across VAV Box Duct Heater does not change during Heating</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavReheatPeriods.html">vavReheatPeriods</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavReheatValveManual.html">vavReheatValveManual</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavSetpointNotMet.html">vavSetpointNotMet</a></th>
+<td>
+<p>VAV Box does not meet the flow Setpoint and the Supply Damper is fully open</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavSetpointNotMetSubdued.html">vavSetpointNotMetSubdued</a></th>
+<td></td>
+</tr>
+<tr>
+<th><a href="vavZoneColdCoolOnly_MaxDmpPD.html">vavZoneColdCoolOnly_MaxDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneColdCoolOnly_MinDmpPD.html">vavZoneColdCoolOnly_MinDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneColdRhtOn_MinDmpPD.html">vavZoneColdRhtOn_MinDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneCold_CoolOnly.html">vavZoneCold_CoolOnly</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneCold_RhtOff.html">vavZoneCold_RhtOff</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneCold_RhtOn.html">vavZoneCold_RhtOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneCold_RhtOn_MaxDamperPD.html">vavZoneCold_RhtOn_MaxDamperPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHotCoolOnly_MaxDmpPD.html">vavZoneHotCoolOnly_MaxDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHotCoolOnly_MinDmpPD.html">vavZoneHotCoolOnly_MinDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHotRhtOff_MaxDmpPD.html">vavZoneHotRhtOff_MaxDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHotRhtOff_MinDmpPD.html">vavZoneHotRhtOff_MinDmpPD</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHot_CoolOnly.html">vavZoneHot_CoolOnly</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHot_RhtOn.html">vavZoneHot_RhtOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneHotandRhtOff.html">vavZoneHotandRhtOff</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavZoneTaggingAhu.html">vavZoneTaggingAhu</a></th>
+<td>
+<p>Adds a <code>vavZone</code> tag to AHUs that serve VAVs</p>
+</td>
+</tr>
+<tr>
+<th><a href="vavsofAHU.html">vavsofAHU</a></th>
+<td>
+<p>to be added</p>
+</td>
+</tr>
+<tr>
+<th><a href="ver1RulesCheck.html">ver1RulesCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="virtMeterRuleOn.html">virtMeterRuleOn</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="virtMeterTagging.html">virtMeterTagging</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="virtualAHU.html">virtualAHU</a></th>
+<td>
+<p>Run this func to create virtual AHU with calculated points</p>
+</td>
+</tr>
+<tr>
+<th><a href="virtualMeter.html">virtualMeter</a></th>
+<td>
+<p>Run this func to create virtual meter</p>
+</td>
+</tr>
+<tr>
+<th><a href="virtualMeterTaggingMDB.html">virtualMeterTaggingMDB</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vrfPointCheck.html">vrfPointCheck</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdCmdFeedbackMismatch.html">vsdCmdFeedbackMismatch</a></th>
+<td>
+<p>Mismatch in Fan VSD Command and VSD Feedback</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdCmdFeedbackMismatchExfan.html">vsdCmdFeedbackMismatchExfan</a></th>
+<td>
+<p>Mismatch in Fan VSD Command and VSD Feedback</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdCmdFeedbackMismatchRetfan.html">vsdCmdFeedbackMismatchRetfan</a></th>
+<td>
+<p>Mismatch in Fan VSD Command and VSD Feedback</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdCmdFeedbackMismatch_inter.html">vsdCmdFeedbackMismatch_inter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdCmdFeedbackMismatchfan.html">vsdCmdFeedbackMismatchfan</a></th>
+<td>
+<p>Mismatch in Fan VSD Command and VSD Feedback</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdInMan.html">vsdInMan</a></th>
+<td>
+<p>Discharge Fan VSD is running with no fan status</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdInManExFan.html">vsdInManExFan</a></th>
+<td>
+<p>Exhaust Fan VSD is running with no fan status/command</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdInManRAfan.html">vsdInManRAfan</a></th>
+<td>
+<p>Return Fan VSD is running with no fan status/command</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdSpeedIssue.html">vsdSpeedIssue</a></th>
+<td>
+<p>This rule will help identifying if VSD speed feedback is 0 Hz even when AHU run status and run command both are "On", potential operational issue</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdSpeedIssueExfan.html">vsdSpeedIssueExfan</a></th>
+<td>
+<p>This rule will help identifying if VSD speed feedback is 0 Hz even when AHU run status and run command both are "On", potential operational issue</p>
+</td>
+</tr>
+<tr>
+<th><a href="vsdSpeedIssueRefan.html">vsdSpeedIssueRefan</a></th>
+<td>
+<p>This rule will help identifying if VSD speed feedback is 0 Hz even when AHU run status and run command both are "On", potential operational issue</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterCalcSiteMeter.html">waterCalcSiteMeter</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterDPSensorBias.html">waterDPSensorBias</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterFlwSenOutOfRange.html">waterFlwSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterFlwSpOutOfRange.html">waterFlwSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterPointIssues.html">waterPointIssues</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterPresSenOutOfRange.html">waterPresSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterPresSpOutOfRange.html">waterPresSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="waterProfileDeviations.html">waterProfileDeviations</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="znPressureHigherThanSPHighSpeed.html">znPressureHigherThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="znPressureHigherThanSPLowSpeed.html">znPressureHigherThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="znPressureLessThanSPHighSpeed.html">znPressureLessThanSPHighSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="znPressureLessThanSPLowSpeed.html">znPressureLessThanSPLowSpeed</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneAirPressureOutOfLimit.html">zoneAirPressureOutOfLimit</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneColdWhenCooling.html">zoneColdWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneColdWhenHeating.html">zoneColdWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneColdWhenNoHeating.html">zoneColdWhenNoHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneColdinFullHeating.html">zoneColdinFullHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneHighCo2OADClose.html">zoneHighCo2OADClose</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneHighCo2OADOpen.html">zoneHighCo2OADOpen</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneHotWhenCooling.html">zoneHotWhenCooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneHotWhenHeating.html">zoneHotWhenHeating</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneIssuePercent.html">zoneIssuePercent</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneIssuePercentFcu.html">zoneIssuePercentFcu</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneIssuePercentwithRht.html">zoneIssuePercentwithRht</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneSpOutOfRange.html">zoneSpOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zoneTempSenOutOfRange.html">zoneTempSenOutOfRange</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zonehotinfullcooling.html">zonehotinfullcooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zonehotwhennocooling.html">zonehotwhennocooling</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+<tr>
+<th><a href="zonetemppointOutOfLimit.html">zonetemppointOutOfLimit</a></th>
+<td>
+<p>Zone Temperature Sensor is reading values beyond limits</p>
+</td>
+</tr>
+<tr>
+<th><a href="zonevsrules.html">zonevsrules</a></th>
+<td>
+<p>Axon function</p>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+
+</div>
+
+<!-- defc-navData
+#funcs funcs
+ func~addAocExtnRules addAocExtnRules
+ func~addDataLossJob addDataLossJob
+ func~addHisAppendNA addHisAppendNA
+ func~addMinMax addMinMax
+ func~addRelationship addRelationship
+ func~addSparkGroupings addSparkGroupings
+ func~addSystemPrimaryKeyEquip addSystemPrimaryKeyEquip
+ func~addSystemPrimaryKeyPoint addSystemPrimaryKeyPoint
+ func~addSystemPrimaryKeyPoint_FC addSystemPrimaryKeyPoint_FC
+ func~ahuColdOutCooling ahuColdOutCooling
+ func~ahuCoolHeatCycling ahuCoolHeatCycling
+ func~ahuCoolPeriods ahuCoolPeriods
+ func~ahuCoolPeriods_inter ahuCoolPeriods_inter
+ func~ahuCoolPeriodslessthan100 ahuCoolPeriodslessthan100
+ func~ahuDaStatSpRstNotworking ahuDaStatSpRstNotworking
+ func~ahuDaTSpRstNotWorking ahuDaTSpRstNotWorking
+ func~ahuEconPeriods ahuEconPeriods
+ func~ahuEconandReheat ahuEconandReheat
+ func~ahuEquipTagging ahuEquipTagging
+ func~ahuFanPeriods ahuFanPeriods
+ func~ahuFilterAlarm ahuFilterAlarm
+ func~ahuHeatCoolCycling ahuHeatCoolCycling
+ func~ahuHeatPeriods ahuHeatPeriods
+ func~ahuHeatPeriods_inter ahuHeatPeriods_inter
+ func~ahuHeatPeriodslessthan100 ahuHeatPeriodslessthan100
+ func~ahuHotOutHeating ahuHotOutHeating
+ func~ahuHuminManual ahuHuminManual
+ func~ahuNoCoolPeriods ahuNoCoolPeriods
+ func~ahuNoCoolPeriods_inter ahuNoCoolPeriods_inter
+ func~ahuNoEconNoCoolPeriods ahuNoEconNoCoolPeriods
+ func~ahuNoHeatPeriods ahuNoHeatPeriods
+ func~ahuNoHeatPeriods_inter ahuNoHeatPeriods_inter
+ func~ahuOccNotRun ahuOccNotRun
+ func~ahuOffPeriods ahuOffPeriods
+ func~ahuPointCheck ahuPointCheck
+ func~ahuPointPressRstCom ahuPointPressRstCom
+ func~ahuPressSensorFail ahuPressSensorFail
+ func~ahuRogueRun ahuRogueRun
+ func~ahuRunPeriods ahuRunPeriods
+ func~ahuRunPeriods_inter ahuRunPeriods_inter
+ func~ahuRunRogue ahuRunRogue
+ func~ahuTotalFlow ahuTotalFlow
+ func~ahuUnOccRun ahuUnOccRun
+ func~ahuUnOccupiedRun ahuUnOccupiedRun
+ func~ahudischargecheck ahudischargecheck
+ func~airChangeCalc airChangeCalc
+ func~airFlwSenOutOfRange airFlwSenOutOfRange
+ func~airFlwSpOutOfRange airFlwSpOutOfRange
+ func~airPresSenOutOfRange airPresSenOutOfRange
+ func~airPresSpOutOfRange airPresSpOutOfRange
+ func~allMeter allMeter
+ func~analogDamperMismatchDischarge analogDamperMismatchDischarge
+ func~analogDamperMismatchExhaust analogDamperMismatchExhaust
+ func~analogDamperMismatchOutside analogDamperMismatchOutside
+ func~analogDamperMismatchReturn analogDamperMismatchReturn
+ func~analysisApp analysisApp
+ func~analyticsQC analyticsQC
+ func~anyBoilerOnInSystem anyBoilerOnInSystem
+ func~anyChillerOnInSystem anyChillerOnInSystem
+ func~anyChillerboilerOnSys anyChillerboilerOnSys
+ func~anyChilleron anyChilleron
+ func~anyCoolingTowerOnInSystem anyCoolingTowerOnInSystem
+ func~anyEquipOnInSystem anyEquipOnInSystem
+ func~anyboileron anyboileron
+ func~anyequipRefoff anyequipRefoff
+ func~aoSignalOverriden aoSignalOverriden
+ func~aocAllPoints aocAllPoints
+ func~aocAllPoints2 aocAllPoints2
+ func~assetMaxRules assetMaxRules
+ func~assetvspoint assetvspoint
+ func~autorulelist autorulelist
+ func~autosamquery autosamquery
+ func~autotag autotag
+ func~basicSetup basicSetup
+ func~boilerEquipTagging boilerEquipTagging
+ func~boilerLockoutIneffective boilerLockoutIneffective
+ func~boilerLowTemp_inter boilerLowTemp_inter
+ func~boilerManualRun boilerManualRun
+ func~boilerNotRunwithDem boilerNotRunwithDem
+ func~boilerPointCheck boilerPointCheck
+ func~boilerRogueRun boilerRogueRun
+ func~boilerRunningwithoutDemand boilerRunningwithoutDemand
+ func~boilerequipManualRun boilerequipManualRun
+ func~btuPointCheck btuPointCheck
+ func~bulkjobadd bulkjobadd
+ func~bypassVlvCmdFbk bypassVlvCmdFbk
+ func~bypassvlvOveruse bypassvlvOveruse
+ func~cTLowEffectiveness cTLowEffectiveness
+ func~casecount casecount
+ func~casecount2 casecount2
+ func~cdTempColdNoCooling cdTempColdNoCooling
+ func~cdTempColdWhenCooling cdTempColdWhenCooling
+ func~cdTempHotFullCooling cdTempHotFullCooling
+ func~cdTempHotNoCooling cdTempHotNoCooling
+ func~cdTempHotWhenCooling cdTempHotWhenCooling
+ func~cdwTempSpOutOfRange cdwTempSpOutOfRange
+ func~chWaterTempSenOutOfRange chWaterTempSenOutOfRange
+ func~changeParams changeParams
+ func~chillHighFlo chillHighFlo
+ func~chillLowFlo chillLowFlo
+ func~chilledWaterDeltaTLow chilledWaterDeltaTLow
+ func~chilledWaterTempReset chilledWaterTempReset
+ func~chilledwaterWarm chilledwaterWarm
+ func~chillerEquipTagging chillerEquipTagging
+ func~chillerHighTemp chillerHighTemp
+ func~chillerLockoutIneffective chillerLockoutIneffective
+ func~chillerLowTemp chillerLowTemp
+ func~chillerManualRun chillerManualRun
+ func~chillerNotRunwithDem chillerNotRunwithDem
+ func~chillerPointCheck chillerPointCheck
+ func~chillerRogueRun chillerRogueRun
+ func~chillerRunHours chillerRunHours
+ func~chillerRunNoDmd chillerRunNoDmd
+ func~chillerequipShortCycling chillerequipShortCycling
+ func~chillersystemHighTemp chillersystemHighTemp
+ func~chillersystemLowTemp chillersystemLowTemp
+ func~chwTempSpOutOfRange chwTempSpOutOfRange
+ func~chwpointOutOfLimit chwpointOutOfLimit
+ func~chwsPointCheck chwsPointCheck
+ func~clgCoilDmpFaceBypassLeak clgCoilDmpFaceBypassLeak
+ func~co2Aoc co2Aoc
+ func~co2SensorOutOfLomit co2SensorOutOfLomit
+ func~coHighSp_fanOn coHighSp_fanOn
+ func~coHighSp_fanoff coHighSp_fanoff
+ func~coSensorOutOfLimit coSensorOutOfLimit
+ func~comfortAoc comfortAoc
+ func~comfortAssetTagging comfortAssetTagging
+ func~comfortDashboardCheck comfortDashboardCheck
+ func~comfortHourlyAoc comfortHourlyAoc
+ func~compareSetpoints compareSetpoints
+ func~comparepoints comparepoints
+ func~condTempSenOutOfRange condTempSenOutOfRange
+ func~condensateAlarm condensateAlarm
+ func~constantMaintenanceMode constantMaintenanceMode
+ func~controllerOffline controllerOffline
+ func~coolOnlyTaggingVav coolOnlyTaggingVav
+ func~coolValveCmdandFeedBackMismatch coolValveCmdandFeedBackMismatch
+ func~coolValveInManual coolValveInManual
+ func~coolValveManual coolValveManual
+ func~coolValvePassing coolValvePassing
+ func~coolingInefficiency coolingInefficiency
+ func~coolingToweHighApproach_ct coolingToweHighApproach_ct
+ func~coolingTowerOFFwithFlow coolingTowerOFFwithFlow
+ func~coolingTowerOnwithoutFlow coolingTowerOnwithoutFlow
+ func~coolingTowerOprangeLow coolingTowerOprangeLow
+ func~coolingTowerPointCheck coolingTowerPointCheck
+ func~coolingTowerVsdFbkMismatch coolingTowerVsdFbkMismatch
+ func~coolingvalveMismatch coolingvalveMismatch
+ func~coopointOutOfLimit coopointOutOfLimit
+ func~copointOutOfLimit copointOutOfLimit
+ func~costCalc costCalc
+ func~costCalcMisc costCalcMisc
+ func~cost_load_select cost_load_select
+ func~cracCapacityShifting cracCapacityShifting
+ func~cracdoorOpentooLong cracdoorOpentooLong
+ func~csvFindAll csvFindAll
+ func~ctEquipTagging ctEquipTagging
+ func~ctequipShortCycling ctequipShortCycling
+ func~currentavgcheck currentavgcheck
+ func~currentimbalance currentimbalance
+ func~customApp customApp
+ func~customerType customerType
+ func~customerTypeMBD customerTypeMBD
+ func~cwpointOutOfLimit cwpointOutOfLimit
+ func~daPressureHigherThanSPHighSpeed daPressureHigherThanSPHighSpeed
+ func~daPressureHigherThanSPLowSpeed daPressureHigherThanSPLowSpeed
+ func~daPressureLessThanSPHighSpeed daPressureLessThanSPHighSpeed
+ func~daPressureLessThanSPLowSpeed daPressureLessThanSPLowSpeed
+ func~daTempSenOutOfRange daTempSenOutOfRange
+ func~daTempSpOutOfRange daTempSpOutOfRange
+ func~dapointOutOfLimit dapointOutOfLimit
+ func~dataDrop dataDrop
+ func~dataLoss dataLoss
+ func~dataLossList dataLossList
+ func~dataLossSend dataLossSend
+ func~dehumTaggingAhu dehumTaggingAhu
+ func~diffPressSensMalfunc diffPressSensMalfunc
+ func~diffPressureSensorIssue diffPressureSensorIssue
+ func~diffPressureSensorMalfunction diffPressureSensorMalfunction
+ func~directZoneTaggingAhu directZoneTaggingAhu
+ func~dischargeColdWhenFullHeating dischargeColdWhenFullHeating
+ func~dischargeColdWhenHeating dischargeColdWhenHeating
+ func~dischargeColdWhenNoHeating dischargeColdWhenNoHeating
+ func~dischargeColdwhenCooling dischargeColdwhenCooling
+ func~dischargeFanCmdFbk dischargeFanCmdFbk
+ func~dischargeFanFailedToStart dischargeFanFailedToStart
+ func~dischargeFanFailedToStop dischargeFanFailedToStop
+ func~dischargeFanHighStatic dischargeFanHighStatic
+ func~dischargeFanLowStatic dischargeFanLowStatic
+ func~dischargeFanStatic_inter dischargeFanStatic_inter
+ func~dischargeHotFullCooling dischargeHotFullCooling
+ func~dischargeHotNoCooling dischargeHotNoCooling
+ func~dischargeHotWhenCooling dischargeHotWhenCooling
+ func~dischargeHotwhenHeating dischargeHotwhenHeating
+ func~dischargeStatusVSDmismatch dischargeStatusVSDmismatch
+ func~duplicateAssetPoint duplicateAssetPoint
+ func~duplicateSysKey duplicateSysKey
+ func~eTypeRefAdd eTypeRefAdd
+ func~eaFanOffWhenHighTemp eaFanOffWhenHighTemp
+ func~eaFanOnWhenLowTemp eaFanOnWhenLowTemp
+ func~eaPressureHigherThanSPHighSpeed eaPressureHigherThanSPHighSpeed
+ func~eaPressureHigherThanSPLowSpeed eaPressureHigherThanSPLowSpeed
+ func~eaPressureLessThanSPHighSpeed eaPressureLessThanSPHighSpeed
+ func~eaPressureLessThanSPLowSpeed eaPressureLessThanSPLowSpeed
+ func~economyCycleNotUsed economyCycleNotUsed
+ func~economyCycleUnsuitableUse economyCycleUnsuitableUse
+ func~energyDashboardCheck energyDashboardCheck
+ func~energyDataExport energyDataExport
+ func~energyPointNA energyPointNA
+ func~energyReadingZero energyReadingZero
+ func~energySpike energySpike
+ func~energySpikeDetection energySpikeDetection
+ func~energyWheelcmdfbkmismatch energyWheelcmdfbkmismatch
+ func~energyavgvalwrite energyavgvalwrite
+ func~energyprofdeviation energyprofdeviation
+ func~enthalpyWheelNotRunning enthalpyWheelNotRunning
+ func~enthalpywheelImproperRun enthalpywheelImproperRun
+ func~enumMetaMigration3 enumMetaMigration3
+ func~eoAllPoints eoAllPoints
+ func~eoApp eoApp
+ func~eoFullConfig eoFullConfig
+ func~eoGroupNoDL eoGroupNoDL
+ func~eoGroupNoNA eoGroupNoNA
+ func~eoJobs eoJobs
+ func~eoMeterPoints eoMeterPoints
+ func~eoOnEachDay1 eoOnEachDay1
+ func~eoPlantPointCheck eoPlantPointCheck
+ func~eoPoPointreport eoPoPointreport
+ func~eoPoReport eoPoReport
+ func~eoRogue eoRogue
+ func~eoSetpointVariable eoSetpointVariable
+ func~eoSpIteration eoSpIteration
+ func~eoStateVariable eoStateVariable
+ func~eoStop eoStop
+ func~eoTag eoTag
+ func~eoWeatherVariable eoWeatherVariable
+ func~eoZones eoZones
+ func~eoZonesPlantDemand eoZonesPlantDemand
+ func~equipCaseCount equipCaseCount
+ func~equipFailtoStart equipFailtoStart
+ func~equipFailtoStop equipFailtoStop
+ func~equipGrouping equipGrouping
+ func~equipManualRun equipManualRun
+ func~equipNotused equipNotused
+ func~equipRuleReport equipRuleReport
+ func~equipShortCycling equipShortCycling
+ func~equipTagging equipTagging
+ func~equipmentOffline equipmentOffline
+ func~excessMeterConsumption excessMeterConsumption
+ func~exhaustFanCmdFbk exhaustFanCmdFbk
+ func~exhaustFanNotRunninginOcc exhaustFanNotRunninginOcc
+ func~exhaustFanRunningInUnoccupied exhaustFanRunningInUnoccupied
+ func~exhaustStatusVSDmismatch exhaustStatusVSDmismatch
+ func~exhaustTempsenOutOfRange exhaustTempsenOutOfRange
+ func~exhaustfanHighStatic exhaustfanHighStatic
+ func~exhaustfanManualRun exhaustfanManualRun
+ func~exhaustfanfailtostart exhaustfanfailtostart
+ func~exhaustfanfailtostop exhaustfanfailtostop
+ func~exhausttemppointoutoflimit exhausttemppointoutoflimit
+ func~extendedNonOccRun extendedNonOccRun
+ func~extendedNonOccurun extendedNonOccurun
+ func~extractRule extractRule
+ func~extractRuleList extractRuleList
+ func~extractRuleListOld extractRuleListOld
+ func~failedToStart_boiler failedToStart_boiler
+ func~failedToStart_ct failedToStart_ct
+ func~failedToStart_pmp failedToStart_pmp
+ func~failedToStop_ct failedToStop_ct
+ func~failedToStop_pmp failedToStop_pmp
+ func~failtostart_chiller failtostart_chiller
+ func~fanEquipTagging fanEquipTagging
+ func~fanNotRunninginOcc fanNotRunninginOcc
+ func~fanPointCheck fanPointCheck
+ func~fanSpeedHigh fanSpeedHigh
+ func~fanfullspeed fanfullspeed
+ func~fanoff fanoff
+ func~fanrunningInUnoccupiedPeriod fanrunningInUnoccupiedPeriod
+ func~faultDataExport faultDataExport
+ func~fcuPointCheck fcuPointCheck
+ func~filterDirty filterDirty
+ func~findingNAEmail findingNAEmail
+ func~findingna findingna
+ func~floorRefAdd floorRefAdd
+ func~flowSensFail flowSensFail
+ func~flowpointOutOfLimit flowpointOutOfLimit
+ func~flowpointflatline flowpointflatline
+ func~folioextractemail folioextractemail
+ func~funcBackup funcBackup
+ func~funcRestore funcRestore
+ func~funcsTrioCreate funcsTrioCreate
+ func~gasCalcSiteMeter gasCalcSiteMeter
+ func~gasPointIssues gasPointIssues
+ func~gasProfileDeviations gasProfileDeviations
+ func~hbAchCalc hbAchCalc
+ func~hbAchFlowSPoutoflimit hbAchFlowSPoutoflimit
+ func~hbAchFlowSensorFaulty hbAchFlowSensorFaulty
+ func~hbAchFlowSensoroutoflimit hbAchFlowSensoroutoflimit
+ func~hbCo2SPoutoflimit hbCo2SPoutoflimit
+ func~hbCo2SensorFaulty hbCo2SensorFaulty
+ func~hbCo2Sensoroutoflimit hbCo2Sensoroutoflimit
+ func~hbDaPressureLessThanSPHighSpeed hbDaPressureLessThanSPHighSpeed
+ func~hbDaPressureLessThanSPLowSpeed hbDaPressureLessThanSPLowSpeed
+ func~hbDaPressureSPFaulty hbDaPressureSPFaulty
+ func~hbDaPressureSensorFaulty hbDaPressureSensorFaulty
+ func~hbFlowLowAhuFanHighSpeed hbFlowLowAhuFanHighSpeed
+ func~hbFlowLowAhuFanLowSpeed hbFlowLowAhuFanLowSpeed
+ func~hbFlowLowVav hbFlowLowVav
+ func~hbHumidityHighWithDeHum hbHumidityHighWithDeHum
+ func~hbHumidityHighWithNoDeHum hbHumidityHighWithNoDeHum
+ func~hbHumidityLowWithHumidifier hbHumidityLowWithHumidifier
+ func~hbHumidityLowWithNoHum hbHumidityLowWithNoHum
+ func~hbHumiditySPoutoflimit hbHumiditySPoutoflimit
+ func~hbHumiditySensorFaulty hbHumiditySensorFaulty
+ func~hbHumiditySensoroutoflimit hbHumiditySensoroutoflimit
+ func~hbOutsideAirFlwSpOutOfRange hbOutsideAirFlwSpOutOfRange
+ func~hbPm25SensorFaulty hbPm25SensorFaulty
+ func~hbPm25Sensoroutoflimit hbPm25Sensoroutoflimit
+ func~hbTempSPoutoflimit hbTempSPoutoflimit
+ func~hbTempSensoroutoflimit hbTempSensoroutoflimit
+ func~hbTvocSensorFaulty hbTvocSensorFaulty
+ func~hbTvocSensoroutoflimit hbTvocSensoroutoflimit
+ func~hbZoneHighCo2OADClose hbZoneHighCo2OADClose
+ func~hbZoneHighCo2OADOpen hbZoneHighCo2OADOpen
+ func~hdTempColdFullHeating hdTempColdFullHeating
+ func~hdTempColdNoHeating hdTempColdNoHeating
+ func~hdTempColdWhenHeating hdTempColdWhenHeating
+ func~hdTempHotNoHeating hdTempHotNoHeating
+ func~hdTempHotWhenHeating hdTempHotWhenHeating
+ func~heaTWheelLowDeltaT heaTWheelLowDeltaT
+ func~heatMap_RH_All heatMap_RH_All
+ func~heatMap_RH_Equipwise heatMap_RH_Equipwise
+ func~heatMap_Temp_All heatMap_Temp_All
+ func~heatMap_Temp_Equipwise heatMap_Temp_Equipwise
+ func~heatMap_co2_All heatMap_co2_All
+ func~heatMap_co2_Equipwise heatMap_co2_Equipwise
+ func~heatPumpClgInefficiency heatPumpClgInefficiency
+ func~heatPumpHtgInefficiency heatPumpHtgInefficiency
+ func~heatValveCmdandFeedBackMismatch heatValveCmdandFeedBackMismatch
+ func~heatValveManual heatValveManual
+ func~heatWheelcmdfbkmismatch heatWheelcmdfbkmismatch
+ func~heatingCheck heatingCheck
+ func~heatingInefficiency heatingInefficiency
+ func~heatvalveInManual heatvalveInManual
+ func~hexPointCheck hexPointCheck
+ func~hexPriValveMismatch hexPriValveMismatch
+ func~hexPrimeValveOpenDeltaT_low hexPrimeValveOpenDeltaT_low
+ func~hexRogueRun hexRogueRun
+ func~hexSecValveMismatch hexSecValveMismatch
+ func~hexSecondValveOpenDeltaT_low hexSecondValveOpenDeltaT_low
+ func~hexSecondaryVlvCloseHiDmd hexSecondaryVlvCloseHiDmd
+ func~hexSecondaryVlvOpenNoDmd hexSecondaryVlvOpenNoDmd
+ func~hexSecondaryVlvPassing hexSecondaryVlvPassing
+ func~hexSecondaryVlvStuck hexSecondaryVlvStuck
+ func~highBoilerSupplyTemp highBoilerSupplyTemp
+ func~highCHWSupplyTemp highCHWSupplyTemp
+ func~highCO2 highCO2
+ func~highChilledWaterTemp_Hex highChilledWaterTemp_Hex
+ func~highChillerSupplyTemp highChillerSupplyTemp
+ func~highCondenserFlow highCondenserFlow
+ func~highCwSupplyTemp highCwSupplyTemp
+ func~highEntryChilledWaterTemp highEntryChilledWaterTemp
+ func~highHWSsupplytemp highHWSsupplytemp
+ func~highHumidity highHumidity
+ func~highWaterDiffPress highWaterDiffPress
+ func~highWaterDiffPressure highWaterDiffPressure
+ func~hisMinMaxVal hisMinMaxVal
+ func~historyImport historyImport
+ func~hotRefreshChange hotRefreshChange
+ func~hotRefreshChangeMDB hotRefreshChangeMDB
+ func~hotWaterDeltaTLow hotWaterDeltaTLow
+ func~hotWaterHeatTaggingAhu hotWaterHeatTaggingAhu
+ func~hotWaterTempSenOutOfRange hotWaterTempSenOutOfRange
+ func~hotWaterValvePassing hotWaterValvePassing
+ func~htOnInEconoMode htOnInEconoMode
+ func~humidifermanual humidifermanual
+ func~humidityAoc humidityAoc
+ func~humidityHighWithDeHum humidityHighWithDeHum
+ func~humidityHighWithNoDeHum humidityHighWithNoDeHum
+ func~humidityLowWithHumidifier humidityLowWithHumidifier
+ func~humidityLowWithNoHum humidityLowWithNoHum
+ func~hwTempSpOutOfRange hwTempSpOutOfRange
+ func~hwpointOutOfLimit hwpointOutOfLimit
+ func~hwsPointCheck hwsPointCheck
+ func~iKWperTR iKWperTR
+ func~iaqPointCheck iaqPointCheck
+ func~impactedVAVCnt impactedVAVCnt
+ func~impactedVAVName impactedVAVName
+ func~impactedVAVscom impactedVAVscom
+ func~improperBoilerLockout improperBoilerLockout
+ func~improperChillerLockout improperChillerLockout
+ func~improperEconOFF improperEconOFF
+ func~improperEconON improperEconON
+ func~improperISOValve improperISOValve
+ func~improperbypassValve improperbypassValve
+ func~intermitDL intermitDL
+ func~intermittentDataLoss intermittentDataLoss
+ func~intermittentNA intermittentNA
+ func~isoValveMismatch isoValveMismatch
+ func~jobEmailChange jobEmailChange
+ func~jobEmailChangeMDB jobEmailChangeMDB
+ func~jobfailurealert jobfailurealert
+ func~kpiSparkCost kpiSparkCost
+ func~kpiSparkCount kpiSparkCount
+ func~kpiTotalEnergy kpiTotalEnergy
+ func~kwhCalcSiteMeter kwhCalcSiteMeter
+ func~lightEquipTagging lightEquipTagging
+ func~lightFailedtoStart lightFailedtoStart
+ func~lightFailedtoStop lightFailedtoStop
+ func~lightsOnAndUnoccupied lightsOnAndUnoccupied
+ func~lightsOnAndUnoccupied_new lightsOnAndUnoccupied_new
+ func~lowBoilerSupplyTemp lowBoilerSupplyTemp
+ func~lowCHWSupplyTemp lowCHWSupplyTemp
+ func~lowChilledWaterTemp_Hex lowChilledWaterTemp_Hex
+ func~lowChillerSupplyTemp lowChillerSupplyTemp
+ func~lowCwFlow lowCwFlow
+ func~lowDiffWaterPressure lowDiffWaterPressure
+ func~lowEnteringHotWaterTemp lowEnteringHotWaterTemp
+ func~lowHWSsupplytemp lowHWSsupplytemp
+ func~lowHumidity lowHumidity
+ func~lowPreheatTemp lowPreheatTemp
+ func~lowWaterDiffPressure lowWaterDiffPressure
+ func~lowdeltaTCTowerOn lowdeltaTCTowerOn
+ func~lowdeltaTboilerOn lowdeltaTboilerOn
+ func~lowdeltaTchillerOn lowdeltaTchillerOn
+ func~maxMinValTagging maxMinValTagging
+ func~mdbFunc mdbFunc
+ func~meterPeakDemand meterPeakDemand
+ func~meterPointCheck meterPointCheck
+ func~meterWise meterWise
+ func~minMaxSP minMaxSP
+ func~minMaxSpTrend minMaxSpTrend
+ func~minMaxValAdd minMaxValAdd
+ func~minmaxZone minmaxZone
+ func~missingRulesCheck missingRulesCheck
+ func~mixedTempSensOutofRange mixedTempSensOutofRange
+ func~mixedtemppointoutoflimit mixedtemppointoutoflimit
+ func~multiZoneTaggingAhu multiZoneTaggingAhu
+ func~noteExport noteExport
+ func~oadFlowHigherThansp oadFlowHigherThansp
+ func~oadFlowLesserThansp oadFlowLesserThansp
+ func~occupancyandMaintenance occupancyandMaintenance
+ func~offCoilNotGreaterthanOnCoilHeating offCoilNotGreaterthanOnCoilHeating
+ func~offCoilnotLessthanOnCoilCooling offCoilnotLessthanOnCoilCooling
+ func~offcoilSenOutofRange offcoilSenOutofRange
+ func~offcoilTemppointoutoflimit offcoilTemppointoutoflimit
+ func~onCoiltemppointoutoflimit onCoiltemppointoutoflimit
+ func~oncoilsenOutofRange oncoilsenOutofRange
+ func~outsideAirCheck outsideAirCheck
+ func~outsideAirTempCheck outsideAirTempCheck
+ func~overCooling overCooling
+ func~overHeating overHeating
+ func~paramSplitter1 paramSplitter1
+ func~parseSparkPriority parseSparkPriority
+ func~parseSparkType parseSparkType
+ func~parseWorkOrder parseWorkOrder
+ func~pdTaggingVav pdTaggingVav
+ func~piRulesCheck piRulesCheck
+ func~plantEquipTagging plantEquipTagging
+ func~pointHistoryApp pointHistoryApp
+ func~pointInAlarm pointInAlarm
+ func~pointMinMax pointMinMax
+ func~pointMinMax1 pointMinMax1
+ func~pointNaFinder pointNaFinder
+ func~pointOutOfLimit pointOutOfLimit
+ func~pointdeviatingfromgroup pointdeviatingfromgroup
+ func~ppmReportGenerate ppmReportGenerate
+ func~preheatTempControlissue preheatTempControlissue
+ func~prespointOutOfLimit prespointOutOfLimit
+ func~pressSensFail pressSensFail
+ func~pressuresensorIssuewithocc pressuresensorIssuewithocc
+ func~pressuresensorbiaswithocc pressuresensorbiaswithocc
+ func~pumpEquipTagging pumpEquipTagging
+ func~pumpPointCheck pumpPointCheck
+ func~pumpRogueRun pumpRogueRun
+ func~pumpRoguerun pumpRoguerun
+ func~pumpvsdcmdMsmatch pumpvsdcmdMsmatch
+ func~raPressureHigherThanSPHighSpeed raPressureHigherThanSPHighSpeed
+ func~raPressureHigherThanSPLowSpeed raPressureHigherThanSPLowSpeed
+ func~raPressureLessThanSPHighSpeed raPressureLessThanSPHighSpeed
+ func~raPressureLessThanSPLowSpeed raPressureLessThanSPLowSpeed
+ func~raTempSenOutOfRange raTempSenOutOfRange
+ func~raTempSpOutOfRange raTempSpOutOfRange
+ func~racRateofChange racRateofChange
+ func~rackTempGradient rackTempGradient
+ func~radCoolPointCheck radCoolPointCheck
+ func~radHeatPointCheck radHeatPointCheck
+ func~readCsv readCsv
+ func~reheatTaggingVav reheatTaggingVav
+ func~removeBlankCols removeBlankCols
+ func~reportExport reportExport
+ func~returnColdWhenCooling returnColdWhenCooling
+ func~returnColdWhenFullHeating returnColdWhenFullHeating
+ func~returnColdWhenHeating returnColdWhenHeating
+ func~returnColdWhenNoHeating returnColdWhenNoHeating
+ func~returnFanCmdFbk returnFanCmdFbk
+ func~returnFanHighStatic returnFanHighStatic
+ func~returnFanLowStatic returnFanLowStatic
+ func~returnHotFullCooling returnHotFullCooling
+ func~returnHotNoCooling returnHotNoCooling
+ func~returnHotWhenCooling returnHotWhenCooling
+ func~returnHotWhenHeating returnHotWhenHeating
+ func~returnStatusVSDmismatch returnStatusVSDmismatch
+ func~returnfanfailtostart returnfanfailtostart
+ func~returnfanfailtostop returnfanfailtostop
+ func~returntempointoutoflimit returntempointoutoflimit
+ func~rhSenOutOfRange rhSenOutOfRange
+ func~rhSpOutOfRange rhSpOutOfRange
+ func~rhpointOutOfLimit rhpointOutOfLimit
+ func~rogueRun_boiler rogueRun_boiler
+ func~rogueRun_chiller rogueRun_chiller
+ func~ruleFuncParamChange ruleFuncParamChange
+ func~ruleLanguageChange ruleLanguageChange
+ func~ruleTargetReport ruleTargetReport
+ func~ruleTesterAll ruleTesterAll
+ func~ruleTesterApp ruleTesterApp
+ func~ruleTesterSingle ruleTesterSingle
+ func~ruleType ruleType
+ func~runHoursView runHoursView
+ func~sensflat_Daterange sensflat_Daterange
+ func~sensibleWheelImproperRun sensibleWheelImproperRun
+ func~sensibleWheelNotRunning sensibleWheelNotRunning
+ func~sensorConstantVal sensorConstantVal
+ func~sensorFailure sensorFailure
+ func~sensorFlatline sensorFlatline
+ func~sensorValueSpike sensorValueSpike
+ func~serviceConsumption serviceConsumption
+ func~sfRfmismatch sfRfmismatch
+ func~shortCycle_boiler shortCycle_boiler
+ func~shortCycle_chiller shortCycle_chiller
+ func~shortCycling_ct shortCycling_ct
+ func~signalOscillation signalOscillation
+ func~signalOscillationFreq signalOscillationFreq
+ func~signalOscillationfan signalOscillationfan
+ func~simHeatCool simHeatCool
+ func~simHeatCoolVAV simHeatCoolVAV
+ func~simHumDehum simHumDehum
+ func~simHumdehum simHumdehum
+ func~simultaneousHeatingandCooling simultaneousHeatingandCooling
+ func~singleZoneAhuCoolingInefficiency singleZoneAhuCoolingInefficiency
+ func~singleZoneAhuHeatingInefficiency singleZoneAhuHeatingInefficiency
+ func~singleZoneAhuOverCooling singleZoneAhuOverCooling
+ func~singleZoneAhuOverHeating singleZoneAhuOverHeating
+ func~snapshotPurge snapshotPurge
+ func~spCompare spCompare
+ func~sparkAppNew sparkAppNew
+ func~sppointOutOfLimit sppointOutOfLimit
+ func~stepTest1 stepTest1
+ func~stepTest2 stepTest2
+ func~stsCheck stsCheck
+ func~supplyExhaustFanMismatch supplyExhaustFanMismatch
+ func~supplyWaterhighFlow supplyWaterhighFlow
+ func~supplyreturnFanRunMismatch supplyreturnFanRunMismatch
+ func~supplywaterLowFlow supplywaterLowFlow
+ func~systemBypassValveIssue systemBypassValveIssue
+ func~systemBypassValveOveruse systemBypassValveOveruse
+ func~systemHighTemp systemHighTemp
+ func~systemLowTemp systemLowTemp
+ func~systemPumpOffPeriods systemPumpOffPeriods
+ func~systemPumpOffPeriods_noCWP systemPumpOffPeriods_noCWP
+ func~systemPumpOnPeriods systemPumpOnPeriods
+ func~systemPumpOnPeriods_noCWP systemPumpOnPeriods_noCWP
+ func~systemPumpOnSpeed systemPumpOnSpeed
+ func~toAHUofVAV toAHUofVAV
+ func~toAHUsOfBoilerPlant toAHUsOfBoilerPlant
+ func~toAHUsOfChillerPlant toAHUsOfChillerPlant
+ func~toAhuCool toAhuCool
+ func~toAhuDischargeFan toAhuDischargeFan
+ func~toAhuDischargePressure toAhuDischargePressure
+ func~toAhuDischargePressureSp toAhuDischargePressureSp
+ func~toAhuDischargeTemp toAhuDischargeTemp
+ func~toAhuDischargeTempSp toAhuDischargeTempSp
+ func~toAhuHeat toAhuHeat
+ func~toAhuMixedTemp toAhuMixedTemp
+ func~toAhuOutsideDamper toAhuOutsideDamper
+ func~toAhuOutsideEnthalpy toAhuOutsideEnthalpy
+ func~toAhuOutsideTemp toAhuOutsideTemp
+ func~toAhuReturnEnthalpy toAhuReturnEnthalpy
+ func~toAhuReturnTemp toAhuReturnTemp
+ func~toAhuReturnTempSp toAhuReturnTempSp
+ func~toAhuSpeedCommand toAhuSpeedCommand
+ func~toAhuSpeedSensor toAhuSpeedSensor
+ func~toAhuTp toAhuTp
+ func~toAhuZoneSetpoint toAhuZoneSetpoint
+ func~toAhuZoneTemp toAhuZoneTemp
+ func~toEquipRunCmd toEquipRunCmd
+ func~toEquipRunSensor toEquipRunSensor
+ func~toEquipWorkOrder toEquipWorkOrder
+ func~toOutsideTemp toOutsideTemp
+ func~toSystemBypassValve toSystemBypassValve
+ func~toSystemPressureSensor toSystemPressureSensor
+ func~toSystemPressureSetpoint toSystemPressureSetpoint
+ func~toVavDamper toVavDamper
+ func~toVavFlow toVavFlow
+ func~toVavFlowSp toVavFlowSp
+ func~toVavReheat toVavReheat
+ func~toahudehumidfier toahudehumidfier
+ func~togetMaintenance togetMaintenance
+ func~togetOccupancy togetOccupancy
+ func~togetreheatPeriods togetreheatPeriods
+ func~togetvav togetvav
+ func~tomaintenancePoint tomaintenancePoint
+ func~updateParamHelp updateParamHelp
+ func~variableVolumeTaggingAhu variableVolumeTaggingAhu
+ func~vavAirLeakage vavAirLeakage
+ func~vavAirLeakage_withFreq vavAirLeakage_withFreq
+ func~vavClosedDamperFlow vavClosedDamperFlow
+ func~vavCoolingInefficiency vavCoolingInefficiency
+ func~vavEquipTagging vavEquipTagging
+ func~vavFlowHigh vavFlowHigh
+ func~vavFlowLow vavFlowLow
+ func~vavFlowSensorBias vavFlowSensorBias
+ func~vavFlowSensorBias_withFreq vavFlowSensorBias_withFreq
+ func~vavHeatingInefficiency vavHeatingInefficiency
+ func~vavNoReheatPeriods vavNoReheatPeriods
+ func~vavOverCooling vavOverCooling
+ func~vavOverHeating vavOverHeating
+ func~vavPointCheck vavPointCheck
+ func~vavReheatIssue vavReheatIssue
+ func~vavReheatPeriods vavReheatPeriods
+ func~vavReheatValveManual vavReheatValveManual
+ func~vavSetpointNotMet vavSetpointNotMet
+ func~vavSetpointNotMetSubdued vavSetpointNotMetSubdued
+ func~vavZoneColdCoolOnly_MaxDmpPD vavZoneColdCoolOnly_MaxDmpPD
+ func~vavZoneColdCoolOnly_MinDmpPD vavZoneColdCoolOnly_MinDmpPD
+ func~vavZoneColdRhtOn_MinDmpPD vavZoneColdRhtOn_MinDmpPD
+ func~vavZoneCold_CoolOnly vavZoneCold_CoolOnly
+ func~vavZoneCold_RhtOff vavZoneCold_RhtOff
+ func~vavZoneCold_RhtOn vavZoneCold_RhtOn
+ func~vavZoneCold_RhtOn_MaxDamperPD vavZoneCold_RhtOn_MaxDamperPD
+ func~vavZoneHotCoolOnly_MaxDmpPD vavZoneHotCoolOnly_MaxDmpPD
+ func~vavZoneHotCoolOnly_MinDmpPD vavZoneHotCoolOnly_MinDmpPD
+ func~vavZoneHotRhtOff_MaxDmpPD vavZoneHotRhtOff_MaxDmpPD
+ func~vavZoneHotRhtOff_MinDmpPD vavZoneHotRhtOff_MinDmpPD
+ func~vavZoneHot_CoolOnly vavZoneHot_CoolOnly
+ func~vavZoneHot_RhtOn vavZoneHot_RhtOn
+ func~vavZoneHotandRhtOff vavZoneHotandRhtOff
+ func~vavZoneTaggingAhu vavZoneTaggingAhu
+ func~vavsofAHU vavsofAHU
+ func~ver1RulesCheck ver1RulesCheck
+ func~virtMeterRuleOn virtMeterRuleOn
+ func~virtMeterTagging virtMeterTagging
+ func~virtualAHU virtualAHU
+ func~virtualMeter virtualMeter
+ func~virtualMeterTaggingMDB virtualMeterTaggingMDB
+ func~vrfPointCheck vrfPointCheck
+ func~vsdCmdFeedbackMismatch vsdCmdFeedbackMismatch
+ func~vsdCmdFeedbackMismatchExfan vsdCmdFeedbackMismatchExfan
+ func~vsdCmdFeedbackMismatchRetfan vsdCmdFeedbackMismatchRetfan
+ func~vsdCmdFeedbackMismatch_inter vsdCmdFeedbackMismatch_inter
+ func~vsdCmdFeedbackMismatchfan vsdCmdFeedbackMismatchfan
+ func~vsdInMan vsdInMan
+ func~vsdInManExFan vsdInManExFan
+ func~vsdInManRAfan vsdInManRAfan
+ func~vsdSpeedIssue vsdSpeedIssue
+ func~vsdSpeedIssueExfan vsdSpeedIssueExfan
+ func~vsdSpeedIssueRefan vsdSpeedIssueRefan
+ func~waterCalcSiteMeter waterCalcSiteMeter
+ func~waterDPSensorBias waterDPSensorBias
+ func~waterFlwSenOutOfRange waterFlwSenOutOfRange
+ func~waterFlwSpOutOfRange waterFlwSpOutOfRange
+ func~waterPointIssues waterPointIssues
+ func~waterPresSenOutOfRange waterPresSenOutOfRange
+ func~waterPresSpOutOfRange waterPresSpOutOfRange
+ func~waterProfileDeviations waterProfileDeviations
+ func~znPressureHigherThanSPHighSpeed znPressureHigherThanSPHighSpeed
+ func~znPressureHigherThanSPLowSpeed znPressureHigherThanSPLowSpeed
+ func~znPressureLessThanSPHighSpeed znPressureLessThanSPHighSpeed
+ func~znPressureLessThanSPLowSpeed znPressureLessThanSPLowSpeed
+ func~zoneAirPressureOutOfLimit zoneAirPressureOutOfLimit
+ func~zoneColdWhenCooling zoneColdWhenCooling
+ func~zoneColdWhenHeating zoneColdWhenHeating
+ func~zoneColdWhenNoHeating zoneColdWhenNoHeating
+ func~zoneColdinFullHeating zoneColdinFullHeating
+ func~zoneHighCo2OADClose zoneHighCo2OADClose
+ func~zoneHighCo2OADOpen zoneHighCo2OADOpen
+ func~zoneHotWhenCooling zoneHotWhenCooling
+ func~zoneHotWhenHeating zoneHotWhenHeating
+ func~zoneIssuePercent zoneIssuePercent
+ func~zoneIssuePercentFcu zoneIssuePercentFcu
+ func~zoneIssuePercentwithRht zoneIssuePercentwithRht
+ func~zoneSpOutOfRange zoneSpOutOfRange
+ func~zoneTempSenOutOfRange zoneTempSenOutOfRange
+ func~zonehotinfullcooling zonehotinfullcooling
+ func~zonehotwhennocooling zonehotwhennocooling
+ func~zonetemppointOutOfLimit zonetemppointOutOfLimit
+ func~zonevsrules zonevsrules
+-->
+<h2 class="defc-main-heading" id=""></h2>
+<div class="defc-main-section">
+<p class="defc-footer-ts">
+Skyspark 3.1.6 ∙ 17-Apr-2023 19:50 GMT</p>
+
+</div>
+
+</div>
+</div></div></div></div></div></div></body></html>

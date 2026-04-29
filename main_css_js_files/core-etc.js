@@ -1,0 +1,31 @@
+(function() {
+  var root=this;
+var fan=root.fan;
+if (!fan && (typeof require !== 'undefined')) fan = require('sys.js');
+
+  var i = fan.sys.Map.make(fan.sys.Str.$type, new fan.sys.ListType(fan.sys.Str.$type));
+  i.set("auth.mod", fan.sys.List.make(fan.sys.Str.$type, ["certAuthMod::CertAuthMod","ldapMod::LdapMod","samlSsoMod::SamlSsoMod"]));
+  i.set("auth.scheme", fan.sys.List.make(fan.sys.Str.$type, ["auth::BasicScheme","auth::Folio2Scheme","auth::HmacScheme","auth::PlaintextScheme","auth::ScramScheme","auth::XPlaintextScheme"]));
+  i.set("compiler.bridge.java", fan.sys.List.make(fan.sys.Str.$type, ["compilerJava::JavaBridge"]));
+  i.set("compiler.dsl.sys::Regex", fan.sys.List.make(fan.sys.Str.$type, ["compiler::RegexDslPlugin"]));
+  i.set("compiler.dsl.sys::Str", fan.sys.List.make(fan.sys.Str.$type, ["compiler::StrDslPlugin"]));
+  i.set("conn.tool", fan.sys.List.make(fan.sys.Str.$type, ["classicConnExt::ModbusRegMapEditor"]));
+  i.set("def.compDefLoader", fan.sys.List.make(fan.sys.Str.$type, ["axon::FuncDefLoader","skyarcd::AppDefLoader","skyarcd::ExtDefLoader","skyarcd::FormatDefLoader","skyarcd::SysModDefLoader","skyarcd::TemplateDefLoader","skyarcd::ViewDefLoader"]));
+  i.set("fresco.tagField.snmpMibType", fan.sys.List.make(fan.sys.Str.$type, ["snmpExt::SnmpMibTypeField"]));
+  i.set("hx.cli", fan.sys.List.make(fan.sys.Str.$type, ["hx::HelpCli","hx::VersionCli","hxTools::ConvertCli","hxTools::CryptoCli","hxTools::InitCli","hxTools::StubCli","hxd::RunCli"]));
+  i.set("hxSedona.scheme", fan.sys.List.make(fan.sys.Str.$type, ["hxSedona::DefaultSedonaScheme"]));
+  i.set("migrate.RecMigrator", fan.sys.List.make(fan.sys.Str.$type, ["migrate::StandardMigrator"]));
+  i.set("nav.target", fan.sys.List.make(fan.sys.Str.$type, ["navMod::AnyPointNavTarget","navMod::AnyRecNavTarget","navMod::AppNavTarget","navMod::ConnLearnNavTarget","navMod::ConnNavTarget","navMod::EquipNavTarget","navMod::FileNavTarget","navMod::FuncNavTarget","navMod::IOBinNavTarget","navMod::IODirNavTarget","navMod::IONavTarget","navMod::KpiNavTarget","navMod::MeterNavTarget","navMod::NodeNavTarget","navMod::PointNavTarget","navMod::ProjNavTarget","navMod::RateNavTarget","navMod::ScheduleAndCalendarNavTarget","navMod::SiteNavTarget","navMod::SpaceNavTarget","navMod::SparkNavTarget","navMod::TariffNavTarget","navMod::UserNavTarget","navMod::UserProtoNavTarget","navMod::ViewNavTarget","navMod::WeatherPointNavTarget","navMod::WeatherStationNavTarget"]));
+  i.set("ph.lib", fan.sys.List.make(fan.sys.Str.$type, ["axon","bacnet","certAuth","clone","cluster","clusterAuth","conn","crypto","docker","ecobee","haystack","http","hx","hxApi","hxShell","hxUser","io","ldap","math","modbus","mqtt","nest","obix","obs","opc","ph","phIct","phIoT","phScience","point","py","samlSso","sedona","serial","snmp","sql","task","xml"]));
+  i.set("proj.aspect.note", fan.sys.List.make(fan.sys.Str.$type, ["noteExt::NoteAspect"]));
+  i.set("proj.nav", fan.sys.List.make(fan.sys.Str.$type, ["noteExt::NoteTargetNavTree"]));
+  i.set("skyarc.ext", fan.sys.List.make(fan.sys.Str.$type, ["airqualityIndexExt::AirqualityIndexExt","aocExt::AocExt","arcExt::ArcExt","arcKitExt","assetcacheexportExt::AssetcacheexportExt","assethealthdashboardExt::AssethealthdashboardExt","athissamplecountExt::AthissamplecountExt","c2sExt::C2sExt","centralizedcontrolpointuploaderExt::CentralizedcontrolpointuploaderExt","comfortdashboardExt::ComfortdashboardExt","connExt::ConnExt","demoExt::DemoExt","energyExt::EnergyExt","energyStarExt::EnergyStarExt","energydashboardExt::EnergydashboardExt","faultExt::FaultExt","featureFlagExt::FeatureFlagExt","geoExt::GeoExt","ghgExt::GhgExt","greenButtonExt::GreenButtonExt","healthyBuildingsExt::HealthyBuildingsExt","hisExt::HisExt","hisKitExt::HisKitExt","historywritefromcsvExt::HistorywritefromcsvExt","humidityIndexExt::HumidityIndexExt","jobExt::JobExt","mapExt::MapExt","mlExt::MlExt","modbusExt::ModbusExt","noteExt::NoteExt","notifyExt::NotifyExt","provExt::ProvExt","ruleExt::RuleExt","ruleManagementExt::RuleManagementExt","samCaseExt::SamCaseExt","scheduleExt::ScheduleExt","skysparkProjectSetupExt::SkysparkProjectSetupExt","sparkdetailsExt::SparkdetailsExt","tariffExt::TariffExt","temperatureIndexExt::TemperatureIndexExt","top3previousdayhistoryexportExt::Top3previousdayhistoryexportExt","weatherExt::WeatherExt"]));
+  i.set("skyarc.lib", fan.sys.List.make(fan.sys.Str.$type, ["arcExt::ArcLib","connExt::ConnLib","demoExt::DemoLib","energyExt::EnergyLib","energyStarExt::EnergyStarLib","geoExt::GeoLib","ghgExt::GhgLib","greenButtonExt::GreenButtonLib","hisExt::HisLib","hisKitExt::HisKitLib","jobExt::JobLib","mapExt::MapLib","mlExt::MlLib","modbusExt::ModbusLib","noteExt::NoteLib","notifyExt::NotifyLib","provExt::ProvLib","ruleExt::RuleLib","scheduleExt::ScheduleLib","tariffExt::TariffLib","weatherExt::WeatherLib"]));
+  i.set("skyarc.refScheme", fan.sys.List.make(fan.sys.Str.$type, ["skyarcd::HostRefScheme","skyarcd::ProjRefScheme","skyarcd::RecRefScheme","skyarcd::UserRefScheme"]));
+  i.set("skyspark.benchmark", fan.sys.List.make(fan.sys.Str.$type, ["benchmark::AxonBenchmark","benchmark::CommitBenchmark","benchmark::HisBenchmark"]));
+  i.set("sys.uriScheme.dropbox", fan.sys.List.make(fan.sys.Str.$type, ["dropbox::DropboxScheme"]));
+  i.set("sys.uriScheme.fan", fan.sys.List.make(fan.sys.Str.$type, ["sys::FanScheme"]));
+  i.set("sys.uriScheme.file", fan.sys.List.make(fan.sys.Str.$type, ["sys::FileScheme"]));
+  i.set("sys.uriScheme.googledrive", fan.sys.List.make(fan.sys.Str.$type, ["googleDrive::GoogleDriveScheme"]));
+  fan.sys.Env.cur().$setIndex(i);
+}).call(this);

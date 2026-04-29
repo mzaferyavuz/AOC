@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<g id='solid'>
+ <rect x='13' y='21' width='52' height='86' style='fill:#fff'/>
+ <rect x='3.5' y='11.5' width='121' height='105' style='fill: none;stroke:#fff;stroke-miterlimit: 10;stroke-width: 7px'/>
+ <line x1='72' y1='64' x2='114' y2='64' style='fill: none;stroke:#fff;stroke-miterlimit: 10;stroke-width: 6px'/>
+ <line x1='93' y1='85' x2='93' y2='43' style='fill: none;stroke:#fff;stroke-miterlimit: 10;stroke-width: 6px'/>
+</g>
+</svg>

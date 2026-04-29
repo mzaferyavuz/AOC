@@ -1,0 +1,45 @@
+/*
+//
+// Copyright (c) 2018, SkyFoundry LLC
+// All Rights Reserved
+//
+// History:
+//   2 Mar 2018  Andy Frank  Creation
+//
+*/
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto/Roboto-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto/Roboto-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('robotoMono/RobotoMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
